@@ -1,4 +1,5 @@
-@import url('./fonts.css');
+@import url('./normalize.scss');
+@import url('./fonts.scss');
 
 %clearfix {
     &:after {
@@ -6,6 +7,11 @@
         display: block;
         clear: both;
     }
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
