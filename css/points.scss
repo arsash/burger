@@ -30,12 +30,14 @@
     padding: 3px;
     border-radius: 50%;
     position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
 
     &:hover {
         border: 1px solid #fff;
     }
 }
 
-.point__item-active {
-
+.point_container-active {
+    border: 1px solid #fff;
 }

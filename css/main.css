@@ -518,7 +518,13 @@ body {
   padding: 3px;
   border-radius: 50%;
   position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .point_container:hover {
+  border: 1px solid #fff;
+}
+
+.point_container-active {
   border: 1px solid #fff;
 }
