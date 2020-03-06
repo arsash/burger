@@ -388,28 +388,6 @@ template {
   flex-direction: column;
 }
 
-.order {
-  width: 100px;
-  height: 37px;
-  background-color: #e45028;
-  border-radius: 5px;
-  padding: 13px;
-  text-align: center;
-  box-sizing: border-box;
-  font-family: "Ubuntu-medium";
-}
-.order .order_btn {
-  text-transform: uppercase;
-  font-size: 13px;
-}
-.order .order_btn .btn {
-  color: #fff;
-  text-decoration: none;
-}
-.order:hover {
-  background-color: #c1401e;
-}
-
 .burger {
   width: 880px;
   margin: 0 auto;
@@ -527,4 +505,26 @@ body {
 
 .point_container-active {
   border: 1px solid #fff;
+}
+
+.order {
+  width: 97px;
+  height: 35px;
+  background-color: #e45028;
+  border-radius: 5px;
+  padding: 11px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Ubuntu-medium";
+}
+.order .order_btn {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.order .order_btn .btn {
+  color: #fff;
+  text-decoration: none;
+}
+.order:hover {
+  background-color: #c1401e;
 }

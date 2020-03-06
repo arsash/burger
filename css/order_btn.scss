@@ -1,0 +1,24 @@
+.order {
+    width: 97px;
+    height: 35px;
+    background-color: #e45028;
+    border-radius: 5px;
+    padding: 11px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Ubuntu-medium';
+
+    .order_btn {
+        text-transform: uppercase;
+        font-size: 13px;
+
+        .btn {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        background-color: #c1401e;
+    }
+}
