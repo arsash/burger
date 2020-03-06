@@ -378,7 +378,7 @@ template {
 .first__section {
   height: 100vh;
   margin: 0 auto;
-  background: url("../img/bg.jpg") 55% 0% no-repeat;
+  background: url("../img/bg.jpg") center center/cover no-repeat;
 }
 
 .section__container {
