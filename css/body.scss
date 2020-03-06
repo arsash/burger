@@ -1,0 +1,20 @@
+%clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @extend %clearfix;
+    min-width: 1100px;
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
