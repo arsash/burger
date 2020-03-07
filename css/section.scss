@@ -1,0 +1,19 @@
+.first__section {
+    // width: 100%;
+    height: 100vh;
+    // min-height: 650px;
+    margin: 0 auto;
+    background: url('../img/bg.jpg') center center / cover no-repeat;
+}
+
+.second__section {
+    @extend .first__section;
+    background: url('../img/second_bg.jpg') center center / cover no-repeat;
+}
+
+.section__container {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
