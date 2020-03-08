@@ -12,10 +12,15 @@
     margin-top: 75px;
 }
 
-.wedo__text {
+.section__header {
     font-family: 'Gagalin';
     color: #f9b43b;
     font-size: 72px;
+
+    &-black {
+        color: #2f3234;
+        margin-top: 100px;
+    }
 }
 
 .natural__text {

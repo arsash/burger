@@ -1,0 +1,31 @@
+.features__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.features__item {
+    width: calc(100% / 3 - 26px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__icon {
+    margin-bottom: 30px;
+}
+
+.features__title {
+    font-family: 'Lifehack';
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.features__text {
+    font-family: 'Ubuntu';
+    color: #2f3234;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
