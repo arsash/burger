@@ -453,21 +453,21 @@ h1, h2, h3, h4, h5, h6, li {
   content: "";
 }
 
-.scroll__down {
-  position: fixed;
+.scroll-down {
+  position: absolute;
   left: 50%;
   bottom: 40px;
   cursor: pointer;
 }
 
-.point__nav {
+.point-nav {
   width: 100px;
   position: fixed;
   top: 90px;
   right: 50px;
 }
 
-.point__list {
+.point-nav__list {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5, h6, li {
   border: 1px solid #fff;
 }
 
-.point_container-active {
+.point_container.active {
   border: 1px solid #fff;
 }
 

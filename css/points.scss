@@ -1,11 +1,11 @@
-.point__nav {
+.point-nav {
     width: 100px;
     position: fixed;
     top: 90px;
     right: 50px;
 }
 
-.point__list {
+.point-nav__list {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -39,6 +39,6 @@
     }
 }
 
-.point_container-active {
+.point_container.active {
     border: 1px solid #fff;
 }
