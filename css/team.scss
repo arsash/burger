@@ -1,0 +1,81 @@
+.team__container {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background: #343739;
+    opacity: 0.9;
+}
+
+.team__content {
+    width: 390px;
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.team__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.team__item {
+    margin-bottom: 40px;
+}
+
+.team__title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.team__person {
+    font-family: 'Gagalin';
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+        color: #f9b43b;
+    }
+
+    &-active {
+        color: #f9b43b;
+    }
+}
+
+.team__person-about {
+    display: flex;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.about__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about__text {
+    width: 200px;
+    margin-left: 20px;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 24px;
+
+    .about__title {
+        font-weight: bold;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
