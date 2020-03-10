@@ -11,10 +11,9 @@
 
 .team__content {
     width: 390px;
-    margin-top: 90px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .team__list {
