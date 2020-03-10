@@ -13,7 +13,7 @@
 
 .team__content {
     width: 390px;
-    margin-top: 115px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -54,7 +54,13 @@
     color: #fff;
     font-family: 'Ubuntu';
     font-size: 14px;
-    margin-top: 20px;
+    height: 0;
+    overflow: hidden;
+
+    &-active {
+        height: 100%;
+        margin-top: 20px;
+    }
 }
 
 .about__image {

@@ -672,7 +672,7 @@ h1, h2, h3, h4, h5, h6, li {
 
 .team__content {
   width: 390px;
-  margin-top: 115px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -711,6 +711,11 @@ h1, h2, h3, h4, h5, h6, li {
   color: #fff;
   font-family: "Ubuntu";
   font-size: 14px;
+  height: 0;
+  overflow: hidden;
+}
+.team__person-about-active {
+  height: 100%;
   margin-top: 20px;
 }
 
