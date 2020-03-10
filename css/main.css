@@ -703,8 +703,15 @@ h1, h2, h3, h4, h5, h6, li {
 .team__person:hover {
   color: #f9b43b;
 }
+.team__person:before {
+  content: "▼";
+  margin-right: 10px;
+}
 .team__person-active {
   color: #f9b43b;
+}
+.team__person-active:before {
+  content: "▲";
 }
 
 .team__person-about {

@@ -41,8 +41,18 @@
         color: #f9b43b;
     }
 
+    &:before {
+        content: '▼';
+        margin-right: 10px;
+    }
+
     &-active {
+        
         color: #f9b43b;
+        
+        &:before {
+            content: '▲';
+        }   
     }
 }
 
