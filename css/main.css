@@ -375,7 +375,7 @@ template {
   font-weight: bold;
   font-style: normal;
 }
-.burger__section, .review__section, .best__section {
+.burger__section, .team__section, .review__section, .best__section {
   height: 100vh;
   min-height: 650px;
   margin: 0 auto;
@@ -396,6 +396,10 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.team__section {
+  background: url("../img/team_bg.jpg") top center/cover no-repeat;
 }
 
 .container:after {
@@ -613,7 +617,6 @@ h1, h2, h3, h4, h5, h6, li {
 
 .review__block {
   display: none;
-  height: 100%;
   padding: 20px;
   position: absolute;
   top: 0;
@@ -653,4 +656,5 @@ h1, h2, h3, h4, h5, h6, li {
 
 .review__user-image {
   width: 100%;
+  height: 100%;
 }

@@ -24,3 +24,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.team__section {
+    @extend .burger__section;
+    background: url('../img/team_bg.jpg') top center / cover no-repeat;
+}
