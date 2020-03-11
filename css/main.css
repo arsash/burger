@@ -465,6 +465,8 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .scroll-down {
+  width: 30px;
+  height: 15px;
   position: absolute;
   left: 50%;
   bottom: 40px;
