@@ -10,10 +10,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .features__icon {
-    margin-bottom: 30px;
+    width: 100px;
 }
 
 .features__title {
@@ -29,4 +30,8 @@
     text-align: center;
     font-size: 14px;
     line-height: 24px;
+}
+
+.features__img-elem {
+    width: 100px;
 }
