@@ -1,4 +1,4 @@
-.features__list {
+.best__list {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.features__item {
+.best__item {
     width: calc(100% / 3 - 26px);
     display: flex;
     flex-direction: column;
@@ -14,18 +14,18 @@
     justify-content: center;
 }
 
-.features__icon {
+.best__icon {
     width: 100px;
 }
 
-.features__title {
+.best__title {
     font-family: 'Lifehack';
     font-size: 24px;
     margin-bottom: 25px;
     color: #2f3234;
 }
 
-.features__text {
+.best__text {
     font-family: 'Ubuntu';
     color: #2f3234;
     text-align: center;
@@ -33,6 +33,6 @@
     line-height: 24px;
 }
 
-.features__img-elem {
+.best__img-elem {
     width: 100px;
 }

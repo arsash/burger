@@ -380,24 +380,24 @@ template {
   height: 100vh;
 }
 
-.burger__section {
+.burger-section {
   background: url("../img/bg.jpg") top center/cover no-repeat;
 }
 
-.best__section {
+.best-section {
   background: url("../img/second_bg.jpg") top center/cover no-repeat;
 }
 
-.team__section {
+.team-section {
   background: url("../img/team_bg.jpg") top center/cover no-repeat;
 }
 
-.menu__section {
+.menu-section {
   background: url("../img/menu_bg.jpg") top center/cover no-repeat;
 }
 
 .section-container {
-  width: 1100px;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -557,16 +557,16 @@ h1, h2, h3, h4, h5, h6, li {
   margin-top: 75px;
 }
 
-.section__header {
+.section-title {
   font-family: "Gagalin";
   color: #f9b43b;
   font-size: 72px;
 }
-.section__header-black {
+.section-title-black {
   color: #2f3234;
   margin-top: 75px;
 }
-.section__header-white {
+.section-title-white {
   color: #fff;
 }
 
@@ -576,7 +576,7 @@ h1, h2, h3, h4, h5, h6, li {
   font-size: 65px;
 }
 
-.features__list {
+.best__list {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -584,7 +584,7 @@ h1, h2, h3, h4, h5, h6, li {
   padding: 0;
 }
 
-.features__item {
+.best__item {
   width: calc(100% / 3 - 26px);
   display: flex;
   flex-direction: column;
@@ -592,18 +592,18 @@ h1, h2, h3, h4, h5, h6, li {
   justify-content: center;
 }
 
-.features__icon {
+.best__icon {
   width: 100px;
 }
 
-.features__title {
+.best__title {
   font-family: "Lifehack";
   font-size: 24px;
   margin-bottom: 25px;
   color: #2f3234;
 }
 
-.features__text {
+.best__text {
   font-family: "Ubuntu";
   color: #2f3234;
   text-align: center;
@@ -611,7 +611,7 @@ h1, h2, h3, h4, h5, h6, li {
   line-height: 24px;
 }
 
-.features__img-elem {
+.best__img-elem {
   width: 100px;
 }
 
@@ -767,4 +767,59 @@ h1, h2, h3, h4, h5, h6, li {
 .about__text p {
   margin: 0;
   padding: 0;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+
+.menu__item {
+  display: flex;
+  width: 100%;
+  display: none;
+}
+.menu__item-active {
+  display: block;
+}
+
+.menu-item__block {
+  display: flex;
+}
+
+.menu__title {
+  width: 80px;
+  background: url("../img/menu_item_bg.jpg") bottom center/cover no-repeat;
+  color: #fff;
+  font-family: "Gagalin";
+}
+.menu__title-rotate {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100vh;
+  font-size: 40px;
+  margin: 0;
+}
+
+.menu__desc {
+  width: 540px;
+  height: 100vh;
+  background: #2f3032;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.menu__text {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  color: #fff;
+  margin: 30px 30px 0;
 }
