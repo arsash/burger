@@ -378,21 +378,27 @@ template {
 .section {
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .burger-section {
+  height: 100vh;
   background: url("../img/bg.jpg") top center/cover no-repeat;
 }
 
 .best-section {
+  height: 100vh;
   background: url("../img/second_bg.jpg") top center/cover no-repeat;
 }
 
 .team-section {
+  height: 100vh;
   background: url("../img/team_bg.jpg") top center/cover no-repeat;
 }
 
 .menu-section {
+  height: 100vh;
   background: url("../img/menu_bg.jpg") top center/cover no-repeat;
 }
 
@@ -771,7 +777,14 @@ h1, h2, h3, h4, h5, h6, li {
 
 .menu {
   width: 50%;
-  height: 100%;
+  height: 100;
+}
+
+.menu-container {
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  right: 0;
 }
 
 .menu__list {
@@ -785,28 +798,32 @@ h1, h2, h3, h4, h5, h6, li {
 .menu__item {
   display: flex;
   width: 100%;
-  display: none;
-}
-.menu__item-active {
   display: block;
+  position: relative;
 }
 
 .menu-item__block {
   display: flex;
 }
 
-.menu__title {
+.menu__item-btn {
+  background: transparent;
+  border: none;
+  width: 281px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+}
+
+.menu__item-title {
   width: 80px;
-  background: url("../img/menu_item_bg.jpg") bottom center/cover no-repeat;
+  height: 100vh;
+  background: url("../img/menu_item_bg.jpg") center bottom/cover no-repeat #2f3032;
   color: #fff;
   font-family: "Gagalin";
-}
-.menu__title-rotate {
-  transform: rotate(-90deg);
-  width: 100%;
-  height: 100vh;
-  font-size: 40px;
-  margin: 0;
+  text-align: center;
 }
 
 .menu__desc {
@@ -815,6 +832,12 @@ h1, h2, h3, h4, h5, h6, li {
   background: #2f3032;
   opacity: 0.8;
   color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu__desc-active {
+  display: block;
 }
 
 .menu__text {
