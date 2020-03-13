@@ -387,11 +387,11 @@ template {
   background: url("../img/bg.jpg") top center/cover no-repeat;
 }
 
-.best-section {
+.best {
   background: url("../img/second_bg.jpg") top center/cover no-repeat;
 }
 
-.team-section {
+.team {
   background: url("../img/team_bg.jpg") top center/cover no-repeat;
 }
 
@@ -492,6 +492,7 @@ h1, h2, h3, h4, h5, h6, li {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 0;
 }
 
 .point__item {
@@ -802,7 +803,7 @@ h1, h2, h3, h4, h5, h6, li {
   position: relative;
 }
 .menu__item:hover .menu__desc {
-  width: 460px;
+  width: 540px;
   transition: 1s;
 }
 
