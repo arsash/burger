@@ -5,9 +5,12 @@
 
 .menu-container {
     display: flex;
-    height: 100vh;
+    width: 540px;
+    height: 100%;
     position: absolute;
+    top: 0;
     right: 0;
+    margin: 0;
 }
 
 .menu__list {
@@ -28,6 +31,9 @@
 
 .menu-item__block {
     display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
 }
 
 .menu__item-btn {
@@ -39,7 +45,6 @@
     font-size: 40px;
     color: #fff;
     position: absolute;
-
 }
 
 .menu__item-title {
@@ -48,12 +53,13 @@
     background: url('../img/menu_item_bg.jpg') center bottom / cover no-repeat #2f3032;
     color: #fff;
     font-family: 'Gagalin';
-    text-align: center;
+    text-align: left;
 }
 
 .menu__desc {
-    width: 540px;
-    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    height: 100%;
     background: #2f3032;
     opacity: 0.8;
     color: #fff;
@@ -62,8 +68,8 @@
     right: 0;
     // display: none;
 
-    &-active {
-        display: block;
+    &--active {
+        width: 460px;
     }
 }
 

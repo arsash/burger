@@ -383,7 +383,7 @@ template {
   padding: 0;
 }
 
-.burger-section {
+.burger {
   background: url("../img/bg.jpg") top center/cover no-repeat;
 }
 
@@ -397,6 +397,7 @@ template {
 
 .menu-section {
   background: url("../img/menu_bg.jpg") top center/cover no-repeat;
+  position: relative;
 }
 
 .section-container {
@@ -690,7 +691,8 @@ h1, h2, h3, h4, h5, h6, li {
   position: absolute;
   right: 0;
   width: 50%;
-  height: 100%;
+  margin: 0;
+  height: 106%;
   background: #343739;
   opacity: 0.9;
 }
@@ -779,9 +781,12 @@ h1, h2, h3, h4, h5, h6, li {
 
 .menu-container {
   display: flex;
-  height: 100vh;
+  width: 540px;
+  height: 100%;
   position: absolute;
+  top: 0;
   right: 0;
+  margin: 0;
 }
 
 .menu__list {
@@ -801,6 +806,9 @@ h1, h2, h3, h4, h5, h6, li {
 
 .menu-item__block {
   display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
 }
 
 .menu__item-btn {
@@ -820,12 +828,13 @@ h1, h2, h3, h4, h5, h6, li {
   background: url("../img/menu_item_bg.jpg") center bottom/cover no-repeat #2f3032;
   color: #fff;
   font-family: "Gagalin";
-  text-align: center;
+  text-align: left;
 }
 
 .menu__desc {
-  width: 540px;
-  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
   background: #2f3032;
   opacity: 0.8;
   color: #fff;
@@ -833,8 +842,8 @@ h1, h2, h3, h4, h5, h6, li {
   top: 0;
   right: 0;
 }
-.menu__desc-active {
-  display: block;
+.menu__desc--active {
+  width: 460px;
 }
 
 .menu__text {

@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.burger-section {
+.burger {
     background: url('../img/bg.jpg') top center / cover no-repeat;
 }
 
@@ -20,6 +20,7 @@
 
 .menu-section {
     background: url('../img/menu_bg.jpg') top center / cover no-repeat;
+    position: relative;
 }
 
 .section-container {
