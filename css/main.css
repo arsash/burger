@@ -395,7 +395,7 @@ template {
   background: url("../img/team_bg.jpg") top center/cover no-repeat;
 }
 
-.menu-section {
+.menu {
   background: url("../img/menu_bg.jpg") top center/cover no-repeat;
   position: relative;
 }
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6, li {
   background-color: #c1401e;
 }
 
-.burger {
+.burger-content {
   width: 880px;
   margin: 0 auto;
   display: flex;
@@ -774,18 +774,16 @@ h1, h2, h3, h4, h5, h6, li {
   padding: 0;
 }
 
-.menu {
-  width: 50%;
-  height: 100;
-}
-
 .menu-container {
   display: flex;
-  width: 540px;
+  max-width: 60%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+  margin: 0;
+}
+.menu-container li {
   margin: 0;
 }
 
@@ -800,8 +798,12 @@ h1, h2, h3, h4, h5, h6, li {
 .menu__item {
   display: flex;
   width: 100%;
-  display: block;
+  height: 100%;
   position: relative;
+}
+.menu__item:hover .menu__desc {
+  width: 460px;
+  transition: 1s;
 }
 
 .menu-item__block {
@@ -811,44 +813,65 @@ h1, h2, h3, h4, h5, h6, li {
   margin: 0;
 }
 
-.menu__item-btn {
-  background: transparent;
-  border: none;
-  width: 281px;
-  transform: rotate(-90deg);
-  cursor: pointer;
-  font-size: 40px;
-  color: #fff;
+.menu__item-bg {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2f3032;
+  opacity: 0.6;
+}
+
+.menu__title {
+  position: relative;
+  top: 110px;
+  left: 90px;
+  color: #fff;
+  max-width: 40%;
 }
 
 .menu__item-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 80px;
-  height: 100vh;
-  background: url("../img/menu_item_bg.jpg") center bottom/cover no-repeat #2f3032;
   color: #fff;
   font-family: "Gagalin";
   text-align: left;
+}
+.menu__item-title--first {
+  background: url("../img/menu_item_bg.jpg") center bottom/cover no-repeat;
+}
+.menu__item-title--second {
+  background: url("../img/menu_item_bg2.jpg") center bottom/cover no-repeat;
+}
+.menu__item-title--third {
+  background: url("../img/menu_item_bg3.jpg") center bottom/cover no-repeat;
+}
+
+.menu__item-btn {
+  background: transparent;
+  border: none;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  cursor: pointer;
+  font-size: 40px;
+  color: #fff;
 }
 
 .menu__desc {
   width: 0;
   overflow: hidden;
-  height: 100%;
   background: #2f3032;
   opacity: 0.8;
   color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.menu__desc--active {
-  width: 460px;
+  text-align: justify;
 }
 
 .menu__text {
   font-family: "Ubuntu";
   font-size: 14px;
   color: #fff;
-  margin: 30px 30px 0;
+  padding: 30px 30px 0;
 }
