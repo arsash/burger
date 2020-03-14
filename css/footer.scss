@@ -1,0 +1,76 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contacts__container {
+    width: 100%;
+}
+
+.contacts__map {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background: url('../img/footer_bg.jpg') center center / cover repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__container {
+    width: 940px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    p {
+        margin: 0;
+    }
+
+    width: 50%;
+    color: #fff;
+    padding: 15px 0;
+    font-family: 'Ubuntu';
+
+    .phone {
+        color: #e45028;
+    }
+}
+
+.footer-right {
+    width: 50%;
+}
+
+.social {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        width: 20px;
+        height: 20px;
+        padding: 0 15px;
+
+
+        svg {
+            transform: scale(0.75);
+
+            &:hover {
+                fill: #fff;
+            }
+        }
+   }
+}
