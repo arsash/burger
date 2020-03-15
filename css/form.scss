@@ -1,0 +1,71 @@
+.form__container {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        margin-top: 135px;
+    }
+}
+
+.form__inputs {
+    font-family: 'Ubuntu';
+    color: #fff;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__inputs-col {
+    width: 45%;
+    margin-right: 20px;
+}
+
+.form__label {
+    flex: 1;
+    margin-right: 65px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .form__label-title {
+        margin-bottom: 5px;
+    }
+}
+
+.form__label-input {
+    width: 100%;
+    padding: 8px 21px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form__row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.order__btn {
+    // width: 100px;
+    background-color: #e45028;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Ubuntu-medium';
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.reset__btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

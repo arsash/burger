@@ -1,0 +1,16 @@
+.form__container {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.form__inputs {
+  display: flex;
+}
+
+.form__inputs-col {
+  width: 50%;
+}
+.form__inputs-col label {
+  color: #fff;
+}
