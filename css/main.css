@@ -970,6 +970,10 @@ h1, h2, h3, h4, h5, h6, li {
   justify-content: space-between;
 }
 
+input:focus, textarea:focus {
+  border: 3px solid #f9b43b;
+}
+
 .form__inputs-col {
   width: 45%;
   margin-right: 20px;
@@ -989,7 +993,7 @@ h1, h2, h3, h4, h5, h6, li {
 .form__label-input {
   width: 100%;
   padding: 8px 21px;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 4px;
 }
 
@@ -1018,4 +1022,14 @@ h1, h2, h3, h4, h5, h6, li {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.form__label-radio .form__label-choose {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.form__label-radio input {
+  display: none;
 }

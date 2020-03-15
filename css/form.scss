@@ -17,6 +17,12 @@
     justify-content: space-between;
 }
 
+input, textarea {
+    &:focus {
+        border: 3px solid #f9b43b;
+    }
+}
+
 .form__inputs-col {
     width: 45%;
     margin-right: 20px;
@@ -38,7 +44,7 @@
 .form__label-input {
     width: 100%;
     padding: 8px 21px;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 4px;
 }
 
@@ -49,7 +55,6 @@
 }
 
 .order__btn {
-    // width: 100px;
     background-color: #e45028;
     border-radius: 5px;
     padding: 10px;
@@ -68,4 +73,18 @@
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.form__label-radio {
+
+    .form__label-choose {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+    }
+    
+    input {
+        display: none;
+    }
 }
