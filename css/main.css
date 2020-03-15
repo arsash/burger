@@ -1002,6 +1002,9 @@ input:focus, textarea:focus {
   width: 100%;
   margin-bottom: 14px;
 }
+.form__row textarea {
+  height: 95px;
+}
 
 .order__btn {
   background-color: #e45028;
@@ -1016,12 +1019,18 @@ input:focus, textarea:focus {
   margin-right: 20px;
   cursor: pointer;
 }
+.order__btn:focus {
+  border: 2px solid transparent;
+}
 
 .reset__btn {
   background: transparent;
   color: #fff;
   border: none;
   cursor: pointer;
+}
+.reset__btn:focus {
+  border: 2px solid transparent;
 }
 
 .form__label-radio .form__label-choose {

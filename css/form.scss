@@ -52,6 +52,10 @@ input, textarea {
     display: flex;
     width: 100%;
     margin-bottom: 14px;
+    
+    textarea {
+        height: 95px;
+    }
 }
 
 .order__btn {
@@ -66,6 +70,10 @@ input, textarea {
     color: #fff;
     margin-right: 20px;
     cursor: pointer;
+
+    &:focus {
+        border: 2px solid transparent;
+    }
 }
 
 .reset__btn {
@@ -73,6 +81,10 @@ input, textarea {
     color: #fff;
     border: none;
     cursor: pointer;
+
+    &:focus {
+        border: 2px solid transparent;
+    }
 }
 
 .form__label-radio {
