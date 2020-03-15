@@ -4,6 +4,13 @@
     margin-top: rem(40px);
     text-align: center;
     padding: 0;
+
+    @include tablets {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem(20px);
+    }
 }
 
 .best__item {
@@ -12,6 +19,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include tablets {
+        width: 90%;
+    }
 }
 
 .best__icon {
@@ -31,6 +42,7 @@
     text-align: center;
     font-size: rem(14px);
     line-height: rem(24px);
+    margin-bottom: 2rem;
 }
 
 .best__img-elem {

@@ -630,6 +630,14 @@ h1, h2, h3, h4, h5, h6, li {
   text-align: center;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  .best__list {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+  }
+}
 
 .best__item {
   width: calc(100% / 3 - 26px);
@@ -637,6 +645,11 @@ h1, h2, h3, h4, h5, h6, li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .best__item {
+    width: 90%;
+  }
 }
 
 .best__icon {
@@ -656,6 +669,7 @@ h1, h2, h3, h4, h5, h6, li {
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .best__img-elem {
@@ -682,6 +696,17 @@ h1, h2, h3, h4, h5, h6, li {
 }
 .review__item:hover .review__block {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .review__item {
+    width: 50%;
+    height: 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .review__item {
+    width: 100%;
+  }
 }
 
 .review__block {
@@ -738,6 +763,16 @@ h1, h2, h3, h4, h5, h6, li {
   height: 106%;
   background: #343739;
   opacity: 0.9;
+}
+@media screen and (max-width: 768px) {
+  .team__container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__container {
+    width: 100%;
+  }
 }
 
 .team__content {

@@ -8,6 +8,14 @@
     height: 106%;
     background: #343739;
     opacity: 0.9;
+
+    @include tablets {
+        width: 100%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .team__content {

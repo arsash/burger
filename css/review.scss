@@ -21,7 +21,15 @@
             display: block;
         } 
     }
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 
+    @include phones {
+        width: 100%;
+        
+    }
 }
 
 .review__block {
