@@ -1,7 +1,7 @@
 .best__list {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: rem(40px);
     text-align: center;
     padding: 0;
 }
@@ -15,13 +15,13 @@
 }
 
 .best__icon {
-    width: 100px;
+    width: rem(100px);
 }
 
 .best__title {
     font-family: 'Lifehack';
-    font-size: 24px;
-    margin-bottom: 25px;
+    font-size: rem(24px);
+    margin-bottom: rem(25px);
     color: #2f3234;
 }
 
@@ -29,10 +29,10 @@
     font-family: 'Ubuntu';
     color: #2f3234;
     text-align: center;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
 }
 
 .best__img-elem {
-    width: 100px;
+    width: rem(100px);
 }

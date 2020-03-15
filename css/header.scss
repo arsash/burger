@@ -1,5 +1,5 @@
 .header {
-    width: 960px;
+    width: rem(960px);
     display: flex;
     margin: 10px auto;
     justify-content: space-between;
@@ -7,6 +7,6 @@
 }
 
 .logo__img {
-    width: 100px;
-    height: 75px;
+    width: rem(100px);
+    height: rem(75px);
 }

@@ -28,7 +28,7 @@
 
     &:hover {
         .menu__desc {
-            width: 540px;
+            width: rem(540px);
             transition: 1s;
         }
     }
@@ -54,7 +54,7 @@
 .menu__title {
     position: relative;
     top: 110px;
-    left: 90px;
+    left: rem(90px);
     color: #fff;
     max-width: 40%;
 }
@@ -63,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 80px;
+    width: rem(80px);
     color: #fff;
     font-family: 'Gagalin';
     text-align: left;
@@ -87,7 +87,7 @@
     transform: rotate(180deg);
     writing-mode: vertical-lr;
     cursor: pointer;
-    font-size: 40px;
+    font-size: rem(40px);
     color: #fff;
 }
 
@@ -100,13 +100,13 @@
     text-align: justify;
 
     // &--active {
-    //     width: 460px;
+    //     width: rem(460px);
     // }
 }
 
 .menu__text {
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
     padding: 30px 30px 0;
 }

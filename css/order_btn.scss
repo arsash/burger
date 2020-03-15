@@ -1,6 +1,6 @@
 .order {
-    width: 97px;
-    height: 35px;
+    width: rem(97px);
+    height: rem(35px);
     background-color: #e45028;
     border-radius: 5px;
     padding: 11px;
@@ -10,7 +10,7 @@
 
     .order_btn {
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: rem(13px);
 
         .btn {
             color: #fff;

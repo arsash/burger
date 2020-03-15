@@ -15,7 +15,7 @@
 
 .footer {
     width: 100%;
-    height: 60px;
+    height: rem(60px);
     background: url('../img/footer_bg.jpg') center center / cover repeat-x;
     position: absolute;
     left: 0;
@@ -23,7 +23,7 @@
 }
 
 .footer__container {
-    width: 940px;
+    width: rem(940px);
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -37,7 +37,7 @@
 
     width: 50%;
     color: #fff;
-    padding: 15px 0;
+    padding: rem(15px) 0;
     font-family: 'Ubuntu';
 
     .phone {
@@ -49,28 +49,23 @@
     width: 50%;
 }
 
-.social {
-    width: 100%;
-    height: 60px;
+.social__list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     align-items: center;
-    margin: 0;
-    padding: 0;
     
     li {
-        width: 20px;
-        height: 20px;
-        padding: 0 15px;
-
-
         svg {
-            transform: scale(0.75);
-
             &:hover {
                 fill: #fff;
             }
         }
+   }
+
+   .social__item {
+        width: rem(20px);
+        height: rem(20px);
+        margin-left: rem(20px);
    }
 }

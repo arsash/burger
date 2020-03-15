@@ -1,5 +1,5 @@
 .burger__content {
-    width: 880px;
+    width: rem(880px);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -8,18 +8,18 @@
 }
 
 .burger__text {
-    margin-left: 10px;
-    margin-top: 75px;
+    margin-left: rem(10px);
+    margin-top: rem(75px);
 }
 
 .section-title {
     font-family: 'Gagalin';
     color: #f9b43b;
-    font-size: 72px;
+    font-size: rem(72px);
 
     &-black {
         color: #2f3234;
-        margin-top: 75px;
+        margin-top: rem(75px);
     }
 
     &-white {
@@ -30,5 +30,5 @@
 .natural__text {
     font-family: 'Lifehack';
     color: #fff;
-    font-size: 65px;
+    font-size: rem(65px);
 }

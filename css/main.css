@@ -378,7 +378,7 @@ template {
 .section {
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   margin: 0;
   padding: 0;
 }
@@ -405,7 +405,7 @@ template {
 }
 
 .section-container {
-  width: 960px;
+  width: 60rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -416,6 +416,10 @@ template {
   content: "";
   display: block;
   clear: both;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -440,7 +444,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .header {
-  width: 960px;
+  width: 60rem;
   display: flex;
   margin: 10px auto;
   justify-content: space-between;
@@ -448,12 +452,12 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .logo__img {
-  width: 100px;
-  height: 75px;
+  width: 6.25rem;
+  height: 4.6875rem;
 }
 
 .nav {
-  width: 750px;
+  width: 46.875rem;
   padding: 0;
   font-family: "Ubuntu-medium";
 }
@@ -465,7 +469,7 @@ h1, h2, h3, h4, h5, h6, li {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .nav .nav__link:after {
   content: "•";
@@ -476,9 +480,9 @@ h1, h2, h3, h4, h5, h6, li {
   content: "";
 }
 
-.scroll-down {
-  width: 30px;
-  height: 15px;
+.scroll__down {
+  width: 1.875rem;
+  height: 0.9375rem;
   position: absolute;
   left: 50%;
   bottom: 40px;
@@ -486,10 +490,10 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .point-nav {
-  width: 100px;
+  width: 6.25rem;
   position: fixed;
-  top: 90px;
-  right: 50px;
+  top: 5.625rem;
+  right: 3.125rem;
 }
 
 .point-nav__list {
@@ -513,8 +517,8 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .point_container {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   padding: 3px;
   border-radius: 50%;
   position: relative;
@@ -531,8 +535,8 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .order {
-  width: 97px;
-  height: 35px;
+  width: 6.0625rem;
+  height: 2.1875rem;
   background-color: #e45028;
   border-radius: 5px;
   padding: 11px;
@@ -542,7 +546,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 .order .order_btn {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .order .order_btn .btn {
   color: #fff;
@@ -553,7 +557,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .burger__content {
-  width: 880px;
+  width: 55rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -562,18 +566,18 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .burger__text {
-  margin-left: 10px;
-  margin-top: 75px;
+  margin-left: 0.625rem;
+  margin-top: 4.6875rem;
 }
 
 .section-title {
   font-family: "Gagalin";
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 4.5rem;
 }
 .section-title-black {
   color: #2f3234;
-  margin-top: 75px;
+  margin-top: 4.6875rem;
 }
 .section-title-white {
   color: #fff;
@@ -582,13 +586,13 @@ h1, h2, h3, h4, h5, h6, li {
 .natural__text {
   font-family: "Lifehack";
   color: #fff;
-  font-size: 65px;
+  font-size: 4.0625rem;
 }
 
 .best__list {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   text-align: center;
   padding: 0;
 }
@@ -602,13 +606,13 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .best__icon {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .best__title {
   font-family: "Lifehack";
-  font-size: 24px;
-  margin-bottom: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5625rem;
   color: #2f3234;
 }
 
@@ -616,12 +620,12 @@ h1, h2, h3, h4, h5, h6, li {
   font-family: "Ubuntu";
   color: #2f3234;
   text-align: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .best__img-elem {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .reviews__list {
@@ -673,7 +677,7 @@ h1, h2, h3, h4, h5, h6, li {
 .review__block .review__detail {
   text-transform: uppercase;
   font-family: "Ubuntu";
-  width: 100px;
+  width: 6.25rem;
   background: #2f3234;
   opacity: 1;
   padding: 10px;
@@ -703,7 +707,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .team__content {
-  width: 390px;
+  width: 24.375rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -716,12 +720,12 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .team__item {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .team__title {
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 3.4375rem;
 }
 
 .team__person {
@@ -759,17 +763,17 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .about__image {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
 }
 
 .about__text {
-  width: 200px;
-  margin-left: 20px;
+  width: 12.5rem;
+  margin-left: 1.25rem;
   font-family: "Ubuntu";
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 .about__text .about__title {
   font-weight: bold;
@@ -807,7 +811,7 @@ h1, h2, h3, h4, h5, h6, li {
   position: relative;
 }
 .menu__item:hover .menu__desc {
-  width: 540px;
+  width: 33.75rem;
   transition: 1s;
 }
 
@@ -831,7 +835,7 @@ h1, h2, h3, h4, h5, h6, li {
 .menu__title {
   position: relative;
   top: 110px;
-  left: 90px;
+  left: 5.625rem;
   color: #fff;
   max-width: 40%;
 }
@@ -840,7 +844,7 @@ h1, h2, h3, h4, h5, h6, li {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 80px;
+  width: 5rem;
   color: #fff;
   font-family: "Gagalin";
   text-align: left;
@@ -861,7 +865,7 @@ h1, h2, h3, h4, h5, h6, li {
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #fff;
 }
 
@@ -876,7 +880,7 @@ h1, h2, h3, h4, h5, h6, li {
 
 .menu__text {
   font-family: "Ubuntu";
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
   padding: 30px 30px 0;
 }
@@ -898,7 +902,7 @@ h1, h2, h3, h4, h5, h6, li {
 
 .footer {
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   background: url("../img/footer_bg.jpg") center center/cover repeat-x;
   position: absolute;
   left: 0;
@@ -906,7 +910,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .footer__container {
-  width: 940px;
+  width: 58.75rem;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -916,7 +920,7 @@ h1, h2, h3, h4, h5, h6, li {
 .footer-left {
   width: 50%;
   color: #fff;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   font-family: "Ubuntu";
 }
 .footer-left p {
@@ -930,42 +934,35 @@ h1, h2, h3, h4, h5, h6, li {
   width: 50%;
 }
 
-.social {
-  width: 100%;
-  height: 60px;
+.social__list {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
-.social li {
-  width: 20px;
-  height: 20px;
-  padding: 0 15px;
-}
-.social li svg {
-  transform: scale(0.75);
-}
-.social li svg:hover {
+.social__list li svg:hover {
   fill: #fff;
+}
+.social__list .social__item {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 1.25rem;
 }
 
 .form__container {
-  width: 940px;
+  width: 58.75rem;
   position: relative;
   margin: 0 auto;
 }
 .form__container h2 {
   text-align: center;
-  margin-top: 135px;
+  margin-top: 8.4375rem;
 }
 
 .form__inputs {
   font-family: "Ubuntu";
   color: #fff;
-  margin-top: 55px;
+  margin-top: 3.4375rem;
   display: flex;
   justify-content: space-between;
 }
@@ -976,12 +973,12 @@ input:focus, textarea:focus {
 
 .form__inputs-col {
   width: 45%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .form__label {
   flex: 1;
-  margin-right: 65px;
+  margin-right: 4.0625rem;
 }
 .form__label:last-child {
   margin-right: 0;
@@ -992,7 +989,7 @@ input:focus, textarea:focus {
 
 .form__label-input {
   width: 100%;
-  padding: 8px 21px;
+  padding: 0.5rem 1.3125rem;
   border: 3px solid transparent;
   border-radius: 4px;
 }
@@ -1003,7 +1000,7 @@ input:focus, textarea:focus {
   margin-bottom: 14px;
 }
 .form__row textarea {
-  height: 95px;
+  height: 5.9375rem;
 }
 
 .order__btn {
@@ -1020,7 +1017,7 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 .order__btn:focus {
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
 }
 
 .reset__btn {
@@ -1034,8 +1031,8 @@ input:focus, textarea:focus {
 }
 
 .form__label-radio .form__label-choose {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   background-color: red;
 }

@@ -1,8 +1,8 @@
 .point-nav {
-    width: 100px;
+    width: rem(100px);
     position: fixed;
-    top: 90px;
-    right: 50px;
+    top: rem(90px);
+    right: rem(50px);
 }
 
 .point-nav__list {
@@ -26,8 +26,8 @@
 }
 
 .point_container {
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     padding: 3px;
     border-radius: 50%;
     position: relative;
