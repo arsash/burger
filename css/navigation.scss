@@ -26,6 +26,10 @@
           content: '';
         }
     }
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .scroll__down {

@@ -5,11 +5,22 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        width: 20%;
+    }
 }
 
 .burger__text {
     margin-left: rem(10px);
     margin-top: rem(75px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .section-title {

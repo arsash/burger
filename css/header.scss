@@ -4,6 +4,10 @@
     margin: 10px auto;
     justify-content: space-between;
     align-items: center;
+
+    @include tablets {
+        width: 95%;
+    }
 }
 
 .logo__img {
