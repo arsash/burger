@@ -6,7 +6,24 @@
     h2 {
         text-align: center;
         margin-top: rem(135px);
+
+        @include tablets {
+            margin: 10% 0;
+        }
+
+        @include phones {
+            margin: 10% 0;
+        }
     }
+
+    @include tablets {
+        width: 95%;
+    }
+
+    @include phones {
+        width: 95%;
+    }
+    
 }
 
 .form__inputs {
@@ -15,6 +32,11 @@
     margin-top: rem(55px);
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        margin: auto;
+    }
 }
 
 input, textarea {
@@ -26,6 +48,10 @@ input, textarea {
 .form__inputs-col {
     width: 45%;
     margin-right: rem(20px);
+
+    @include tablets {
+        width: 90%;
+    }
 }
 
 .form__label {
@@ -38,6 +64,7 @@ input, textarea {
 
     .form__label-title {
         margin-bottom: 5px;
+        display: inline-block;
     }
 }
 

@@ -11,6 +11,7 @@
 
     @include tablets {
         width: 100%;
+        min-height: rem(900px);
     }
 
     @include phones {
@@ -29,6 +30,14 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @include tablets {
+        align-self: center;
+    }
+
+    @include phones {
+        align-self: center;
+    }
 }
 
 .team__item {
@@ -45,6 +54,9 @@
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
     &:hover {
         color: #f9b43b;
@@ -84,6 +96,7 @@
     width: rem(100px);
     height: rem(100px);
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .about__text {
