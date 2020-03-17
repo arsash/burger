@@ -2,6 +2,7 @@
     width: rem(940px);
     position: relative;
     margin: 0 auto;
+    min-height: 100%;
 
     h2 {
         text-align: center;
@@ -17,11 +18,11 @@
     }
 
     @include tablets {
-        width: 95%;
+        width: 90%;
     }
 
     @include phones {
-        width: 95%;
+        width: 90%;
     }
     
 }
@@ -34,6 +35,11 @@
     justify-content: space-between;
 
     @include tablets {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    @include phones {
         flex-direction: column;
         margin: auto;
     }
@@ -116,6 +122,8 @@ input, textarea {
 
 .form__label-radio {
 
+    display: none;
+
     .form__label-choose {
             width: rem(20px);
             height: rem(20px);
@@ -123,7 +131,56 @@ input, textarea {
             background-color: red;
     }
     
-    input {
-        display: none;
+}
+
+.form__header {
+    margin-top: rem(50px);
+    margin-bottom: rem(50px);
+    text-align: center;
+}
+
+.radio__custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: #e45028;
+        border-radius: 50%;
+    }
+}
+
+.checked__box {
+    display: none;
+}
+
+.checked {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: #e45028;
+        border-radius: 5px;
     }
 }
