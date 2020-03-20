@@ -6,6 +6,11 @@
     justify-content: space-around;
     align-items: center;
 
+    @include laptop {
+        display: flex;
+        justify-content: center;
+    }
+
     @include tablets {
         flex-direction: column;
         margin: 0;
@@ -23,6 +28,14 @@
     }
 }
 
+.burger__img {
+
+    @include laptop {
+        // width: 95%;
+    }
+
+}
+
 .section-title {
     font-family: 'Gagalin';
     color: #f9b43b;
@@ -36,10 +49,18 @@
     &-white {
         color: #fff;
     }
+
+    @include laptop {
+        font-size: 3.5rem;
+    }
 }
 
 .natural__text {
     font-family: 'Lifehack';
     color: #fff;
     font-size: rem(65px);
+
+    @include laptop {
+        font-size: 3rem;
+    }
 }

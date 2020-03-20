@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 
+
     @include tablets {
         min-height: rem(900px);
     }
@@ -42,6 +43,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include laptop {
+        min-width: 85%;
+    }
 
     @include tablets {
         width: 90%;
