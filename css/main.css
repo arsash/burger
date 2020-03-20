@@ -1033,11 +1033,17 @@ h1, h2, h3, h4, h5, h6, li {
 
 .footer {
   width: 100%;
-  height: 3.75rem;
   background: url("../img/footer_bg.jpg") center center/cover repeat-x;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer__container {
@@ -1056,6 +1062,7 @@ h1, h2, h3, h4, h5, h6, li {
   .footer__container {
     width: 90%;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1073,9 +1080,23 @@ h1, h2, h3, h4, h5, h6, li {
   font-weight: 700;
   text-decoration: none;
 }
+@media screen and (max-width: 480px) {
+  .footer-left {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .footer-right {
   width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .footer-right {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .social__list {
@@ -1091,6 +1112,16 @@ h1, h2, h3, h4, h5, h6, li {
   width: 1.25rem;
   height: 1.25rem;
   margin-left: 1.25rem;
+}
+@media screen and (max-width: 480px) {
+  .social__list .social__item:first-child {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social__list {
+    padding: 0;
+  }
 }
 
 .social__icon {
