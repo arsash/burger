@@ -762,14 +762,32 @@ h1, h2, h3, h4, h5, h6, li {
   font-family: "Gagalin";
   color: #fff;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+@media screen and (max-width: 480px) {
+  .review__block .review__user {
+    margin-top: 0.625rem;
+  }
 }
 .review__block .review__text {
   font-family: "Ubuntu";
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2rem;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 1.875rem;
+  overflow: hidden;
+  max-height: calc(1.2rem * 6);
+}
+@media screen and (max-width: 768px) {
+  .review__block .review__text {
+    max-height: calc(1.2rem * 3);
+  }
+}
+@media screen and (max-width: 480px) {
+  .review__block .review__text {
+    max-height: calc(1.2rem * 2);
+    margin-top: 0.9375rem;
+  }
 }
 .review__block .review__detail {
   text-transform: uppercase;

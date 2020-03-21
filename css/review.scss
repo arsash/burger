@@ -48,15 +48,30 @@
         font-family: 'Gagalin';
         color: #fff;
         font-size: 14px;
-        margin-top: 30px;
+        margin-top: rem(30px);
+
+        @include phones {
+            margin-top: rem(10px);
+        }
     }
 
     .review__text {
         font-family: 'Ubuntu';
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.2rem;
         color: #fff;
-        margin-top: 30px;
+        margin-top: rem(30px);
+        overflow: hidden;
+        max-height: calc(1.2rem * 6);
+
+        @include tablets {
+            max-height: calc(1.2rem * 3);
+        }
+
+        @include phones {
+            max-height: calc(1.2rem * 2);
+            margin-top: rem(15px);
+        }
     }
 
     .review__detail {
