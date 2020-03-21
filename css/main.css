@@ -401,6 +401,15 @@ template {
   background: url("../img/second_bg.jpg") top center/cover no-repeat;
 }
 
+.burger-slider {
+  background: #f9b43b;
+  background: linear-gradient(180deg, #f9b43b 25%, #eb8c38 50%, #f9b43b 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40.625rem;
+}
+
 .team {
   background: url("../img/team_bg.jpg") top center/cover no-repeat;
 }
@@ -640,7 +649,7 @@ h1, h2, h3, h4, h5, h6, li {
   color: #2f3234;
   margin-top: 4.6875rem;
 }
-.section-title-white {
+.section-title--white {
   color: #fff;
 }
 @media screen and (max-width: 990px) {
@@ -1331,4 +1340,14 @@ input:focus, textarea:focus {
   position: relative;
   display: block;
   margin-right: 5px;
+}
+
+.burger-slider__burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-slider_col {
+  width: 40%;
 }
