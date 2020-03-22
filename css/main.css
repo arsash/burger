@@ -531,7 +531,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .point-nav {
-  width: 6.25rem;
+  width: 3rem;
   position: fixed;
   top: 5.625rem;
   right: 3.125rem;
@@ -1342,12 +1342,72 @@ input:focus, textarea:focus {
   margin-right: 5px;
 }
 
-.burger-slider__burger {
+.burger-slider__container {
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.burger-slider__burger {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 990px) {
+  .burger-slider__burger {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .burger-slider__burger {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .burger-slider__burger {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 
 .burger-slider_col {
   width: 40%;
+}
+
+.burger-slider__icon {
+  cursor: pointer;
+}
+
+.contain__container {
+  width: 5rem;
+  height: 5rem;
+  background: #f08c33;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contain__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.contain__icon-img {
+  width: 90%;
+  height: 90%;
+}
+
+.contain__text {
+  font-family: "Gagalin";
+  margin-top: -25px;
 }
