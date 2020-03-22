@@ -29,7 +29,17 @@
 }
 
 .burger-slider_col {
-    width: 40%;
+    width: 35%;
+
+    @include laptop {
+        width: 80%;
+        text-align: center;
+    }
+
+    @include tablets {
+        width: 80%;
+        text-align: center;
+    }
 
     @include phones {
         width: 100%;

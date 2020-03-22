@@ -759,6 +759,7 @@ h1, h2, h3, h4, h5, h6, li {
   .review__item {
     width: 50%;
     height: 25%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -845,6 +846,7 @@ h1, h2, h3, h4, h5, h6, li {
   .team__container {
     width: 100%;
     min-height: 56.25rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1387,7 +1389,19 @@ input:focus, textarea:focus {
 }
 
 .burger-slider_col {
-  width: 40%;
+  width: 35%;
+}
+@media screen and (max-width: 990px) {
+  .burger-slider_col {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .burger-slider_col {
+    width: 80%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .burger-slider_col {

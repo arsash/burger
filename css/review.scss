@@ -24,6 +24,7 @@
     @include tablets {
         width: 50%;
         height: 25%;
+        text-align: center;
     }
 
     @include phones {

@@ -12,6 +12,7 @@
     @include tablets {
         width: 100%;
         min-height: rem(900px);
+        text-align: center;
     }
 
     @include phones {
@@ -90,6 +91,10 @@
         height: 100%;
         margin-top: 20px;
     }
+
+    // @include tablets {
+    //     flex-direction: column;
+    // }
 }
 
 .about__image {
