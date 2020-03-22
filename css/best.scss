@@ -11,6 +11,10 @@
         align-items: center;
         margin-top: rem(20px);
     }
+
+    @include phones {
+        width: 95%;
+    }
 }
 
 .best__item {
@@ -22,6 +26,7 @@
 
     @include tablets {
         width: 90%;
+        margin-top: rem(-45px);
     }
 }
 

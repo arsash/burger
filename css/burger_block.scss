@@ -44,6 +44,10 @@
     &-black {
         color: #2f3234;
         margin-top: rem(75px);
+
+        @include tablets {
+            margin: 2rem auto;
+        }
     }
 
     &--white {

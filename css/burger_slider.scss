@@ -9,6 +9,7 @@
     position: relative;
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
@@ -23,11 +24,16 @@
     @include phones {
         width: 90%;
         flex-direction: column;
+        justify-content: center;
     }
 }
 
 .burger-slider_col {
     width: 40%;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .burger-slider__icon {
