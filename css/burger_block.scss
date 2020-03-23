@@ -54,6 +54,15 @@
         color: #fff;
     }
 
+    &-red {
+        color: #e45028;
+        font-size: rem(71px);
+    }
+
+    &-cur {
+        font-size: rem(29px);
+    }
+
     @include laptop {
         font-size: 3.5rem;
     }

@@ -89,6 +89,10 @@
             color: #fff;
             text-decoration: none;
         }
+
+        @include tablets {
+            margin: 10px auto;
+        }
     }
 }
 

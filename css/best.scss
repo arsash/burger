@@ -6,7 +6,7 @@
     padding: 0;
 
     @include tablets {
-        width: 80%;
+        width: 95%;
         flex-direction: column;
         align-items: center;
         margin-top: rem(20px);
@@ -25,8 +25,12 @@
     justify-content: center;
 
     @include tablets {
-        width: 90%;
+        width: 95%;
         margin-top: rem(-45px);
+    }
+
+    @include phones {
+        flex-direction: row;
     }
 }
 

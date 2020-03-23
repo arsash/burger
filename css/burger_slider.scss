@@ -1,5 +1,5 @@
 .burger-slider__container {
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
 
 .burger-slider__burger {
     position: relative;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -29,7 +29,7 @@
 }
 
 .burger-slider_col {
-    width: 35%;
+    width: 40%;
 
     @include laptop {
         width: 80%;
@@ -51,7 +51,7 @@
 }
 
 .contain__container {
-    width: rem(80px);
+    width: rem(95px);
     height: rem(80px);
     background: #f08c33;
     position: absolute;
@@ -79,4 +79,21 @@
 .contain__text {
     font-family: 'Gagalin';
     margin-top: -25px;
+}
+
+.burger-slider__text {
+    font-family: 'Ubuntu';
+    color: #fff;
+    font-size: rem(14px);
+}
+
+.burger__slider-cost {
+    display: flex;
+    position: relative;
+}
+
+.order-pos {
+    position: absolute;
+    top: 42px;
+    left: 250px;
 }
