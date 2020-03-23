@@ -79,13 +79,14 @@
 
     &:hover {
         &:before {
-            transform: rotate(45deg);
+            top: 0;
+            transform: rotate(-45deg);
             transition: .5s;
         }
 
         &:after {
-            top: -10px;
-            transform: rotate(-45deg);
+            top: 0;
+            transform: rotate(45deg);
             transition: .5s;
         }
 

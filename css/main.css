@@ -568,12 +568,13 @@ h1, h2, h3, h4, h5, h6, li {
   background: transparent;
 }
 .hamburger-nav:hover:before {
-  transform: rotate(45deg);
+  top: 0;
+  transform: rotate(-45deg);
   transition: 0.5s;
 }
 .hamburger-nav:hover:after {
-  top: -10px;
-  transform: rotate(-45deg);
+  top: 0;
+  transform: rotate(45deg);
   transition: 0.5s;
 }
 
