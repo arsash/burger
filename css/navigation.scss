@@ -40,3 +40,56 @@
     bottom: 40px;
     cursor: pointer;
 }
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger-nav {
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: -10px;
+        right: 0;
+    }
+    
+    &:after {
+        content: '';
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    &:hover {
+        &:before {
+            transform: rotate(45deg);
+            transition: .5s;
+        }
+
+        &:after {
+            top: -10px;
+            transform: rotate(-45deg);
+            transition: .5s;
+        }
+
+        background: transparent;
+    }
+
+}
