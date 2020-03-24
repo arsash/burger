@@ -47,7 +47,8 @@
 }
 
 .slider__icon-left {
-    width: auto;
+    width: 15px;
+    height: 30px;
     cursor: pointer;
     background: url('../img/scroll_left.png') center center / cover no-repeat;
     background-color: transparent;
@@ -55,6 +56,8 @@
 }
 
 .slider__icon-right {
+    width: 15px;
+    height: 30px;
     cursor: pointer;
     background: url('../img/scroll_right.png') center center / cover no-repeat;
     background-color: transparent;

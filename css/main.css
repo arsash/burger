@@ -737,7 +737,7 @@ h1, h2, h3, h4, h5, h6, li {
 .section-title--white {
   color: #fff;
 }
-.section-title-red {
+.section-title--red {
   color: #e45028;
   font-size: 4.4375rem;
 }
@@ -1519,7 +1519,8 @@ input:focus, textarea:focus {
 }
 
 .slider__icon-left {
-  width: auto;
+  width: 15px;
+  height: 30px;
   cursor: pointer;
   background: url("../img/scroll_left.png") center center/cover no-repeat;
   background-color: transparent;
@@ -1527,6 +1528,8 @@ input:focus, textarea:focus {
 }
 
 .slider__icon-right {
+  width: 15px;
+  height: 30px;
   cursor: pointer;
   background: url("../img/scroll_right.png") center center/cover no-repeat;
   background-color: transparent;
