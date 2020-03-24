@@ -401,7 +401,7 @@ template {
   background: url("../img/second_bg.jpg") top center/cover no-repeat;
 }
 
-.burger-slider {
+.slider {
   background: #f9b43b;
   background: linear-gradient(180deg, #f9b43b 25%, #eb8c38 50%, #f9b43b 75%);
   display: flex;
@@ -1228,6 +1228,9 @@ h1, h2, h3, h4, h5, h6, li {
 
 .footer-right {
   width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 @media screen and (max-width: 480px) {
   .footer-right {
@@ -1461,14 +1464,14 @@ input:focus, textarea:focus {
   margin-right: 5px;
 }
 
-.burger-slider__container {
+.slider__container {
   width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.burger-slider__burger {
+.slider__burger {
   position: relative;
   width: 90%;
   display: flex;
@@ -1477,46 +1480,57 @@ input:focus, textarea:focus {
   align-items: center;
 }
 @media screen and (max-width: 990px) {
-  .burger-slider__burger {
+  .slider__burger {
     width: 90%;
   }
 }
 @media screen and (max-width: 768px) {
-  .burger-slider__burger {
+  .slider__burger {
     width: 90%;
   }
 }
 @media screen and (max-width: 480px) {
-  .burger-slider__burger {
+  .slider__burger {
     width: 90%;
     flex-direction: column;
     justify-content: center;
   }
 }
 
-.burger-slider_col {
+.slider_col {
   width: 40%;
 }
 @media screen and (max-width: 990px) {
-  .burger-slider_col {
+  .slider_col {
     width: 80%;
     text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .burger-slider_col {
+  .slider_col {
     width: 80%;
     text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
-  .burger-slider_col {
+  .slider_col {
     width: 100%;
   }
 }
 
-.burger-slider__icon {
+.slider__icon-left {
+  width: auto;
   cursor: pointer;
+  background: url("../img/scroll_left.png") center center/cover no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+.slider__icon-right {
+  cursor: pointer;
+  background: url("../img/scroll_right.png") center center/cover no-repeat;
+  background-color: transparent;
+  border: none;
 }
 
 .contain__container {
@@ -1550,13 +1564,13 @@ input:focus, textarea:focus {
   margin-top: -25px;
 }
 
-.burger-slider__text {
+.slider__text {
   font-family: "Ubuntu";
   color: #fff;
   font-size: 0.875rem;
 }
 
-.burger__slider-cost {
+.slider-cost {
   display: flex;
   position: relative;
 }

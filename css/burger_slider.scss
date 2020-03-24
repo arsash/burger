@@ -1,11 +1,11 @@
-.burger-slider__container {
+.slider__container {
     width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.burger-slider__burger {
+.slider__burger {
     position: relative;
     width: 90%;
     display: flex;
@@ -28,7 +28,7 @@
     }
 }
 
-.burger-slider_col {
+.slider_col {
     width: 40%;
 
     @include laptop {
@@ -46,8 +46,19 @@
     }
 }
 
-.burger-slider__icon {
+.slider__icon-left {
+    width: auto;
     cursor: pointer;
+    background: url('../img/scroll_left.png') center center / cover no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.slider__icon-right {
+    cursor: pointer;
+    background: url('../img/scroll_right.png') center center / cover no-repeat;
+    background-color: transparent;
+    border: none;
 }
 
 .contain__container {
@@ -81,13 +92,13 @@
     margin-top: -25px;
 }
 
-.burger-slider__text {
+.slider__text {
     font-family: 'Ubuntu';
     color: #fff;
     font-size: rem(14px);
 }
 
-.burger__slider-cost {
+.slider-cost {
     display: flex;
     position: relative;
 }
