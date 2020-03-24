@@ -21,4 +21,16 @@
     &:hover {
         background-color: #c1401e;
     }
+
+    @include tablets {
+        position: absolute;
+        top: rem(35px);
+        right: rem(95px);
+    }
+
+    @include phones {
+        position: absolute;
+        top: rem(35px);
+        right: rem(95px);
+    }
 }

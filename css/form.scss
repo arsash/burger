@@ -59,6 +59,14 @@ input, textarea {
     }
 }
 
+.form-adress {
+    @include phones {
+        .form__label:last-child {
+            display: none;
+        }
+    }
+}
+
 .form__label-input {
     width: 100%;
     padding: rem(8px) rem(21px);

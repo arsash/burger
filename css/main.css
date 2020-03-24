@@ -389,7 +389,7 @@ template {
 }
 @media screen and (max-width: 480px) {
   .section {
-    min-height: 37.5rem;
+    min-height: 50rem;
   }
 }
 
@@ -532,6 +532,12 @@ h1, h2, h3, h4, h5, h6, li {
 
 .hamburger {
   cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 .hamburger-nav {
@@ -540,8 +546,8 @@ h1, h2, h3, h4, h5, h6, li {
   background: #fff;
   border-radius: 3px;
   position: absolute;
-  top: 50px;
-  right: 100px;
+  top: 48px;
+  right: 13px;
   cursor: pointer;
 }
 .hamburger-nav:before {
@@ -576,6 +582,18 @@ h1, h2, h3, h4, h5, h6, li {
   top: 0;
   transform: rotate(45deg);
   transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-nav {
+    top: 3.125rem;
+    right: 1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hamburger-nav {
+    top: 3.125rem;
+    right: 1.875rem;
+  }
 }
 
 .point-nav {
@@ -653,6 +671,20 @@ h1, h2, h3, h4, h5, h6, li {
 }
 .order:hover {
   background-color: #c1401e;
+}
+@media screen and (max-width: 768px) {
+  .order {
+    position: absolute;
+    top: 2.1875rem;
+    right: 5.9375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order {
+    position: absolute;
+    top: 2.1875rem;
+    right: 5.9375rem;
+  }
 }
 
 .burger__content {
@@ -1212,6 +1244,9 @@ h1, h2, h3, h4, h5, h6, li {
   justify-content: flex-end;
   align-items: center;
 }
+.social__list li svg {
+  fill: grey;
+}
 .social__list li svg:hover {
   fill: #fff;
 }
@@ -1297,6 +1332,12 @@ input:focus, textarea:focus {
 .form__label .form__label-title {
   margin-bottom: 5px;
   display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+  .form-adress .form__label:last-child {
+    display: none;
+  }
 }
 
 .form__label-input {

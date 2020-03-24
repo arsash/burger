@@ -43,6 +43,11 @@
 
 .hamburger {
     cursor: pointer;
+    display: none;
+
+    @include tablets {
+        display: block;
+    }
 }
 
 .hamburger-nav {
@@ -51,8 +56,8 @@
     background: #fff;
     border-radius: 3px;
     position: absolute;
-    top: 50px;
-    right: 100px;
+    top: 48px;
+    right: 13px;
     cursor: pointer;
 
     &:before {
@@ -91,6 +96,16 @@
         }
 
         background: transparent;
+    }
+
+    @include tablets {
+        top: rem(50px);
+        right: rem(30px);
+    }
+
+    @include phones {
+        top: rem(50px);
+        right: rem(30px);
     }
 
 }
