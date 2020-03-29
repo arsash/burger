@@ -734,6 +734,11 @@ h1, h2, h3, h4, h5, h6, li {
     margin: 2rem auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .section-title-black {
+    font-size: 3.125rem;
+  }
+}
 .section-title--white {
   color: #fff;
 }
@@ -811,6 +816,14 @@ h1, h2, h3, h4, h5, h6, li {
   margin-bottom: 1.5625rem;
   color: #2f3234;
 }
+.best__title h3 {
+  margin-bottom: 1.5625rem;
+}
+@media screen and (max-width: 480px) {
+  .best__title {
+    text-align: left;
+  }
+}
 
 .best__text {
   font-family: "Ubuntu";
@@ -819,6 +832,12 @@ h1, h2, h3, h4, h5, h6, li {
   font-size: 0.875rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .best__text {
+    text-align: left;
+    font-size: 0.875rem;
+  }
 }
 
 .best__img-elem {
@@ -1541,7 +1560,7 @@ input:focus, textarea:focus {
   height: 5rem;
   background: #f08c33;
   position: absolute;
-  top: 0;
+  top: -3.75rem;
   left: 0;
   border-radius: 10px;
   color: #fff;
@@ -1549,12 +1568,12 @@ input:focus, textarea:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .contain__icon {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .contain__icon-img {
@@ -1582,4 +1601,42 @@ input:focus, textarea:focus {
   position: absolute;
   top: 42px;
   left: 250px;
+}
+
+@media screen and (max-width: 480px) {
+  .slider__img {
+    width: 21.875rem;
+  }
+}
+
+.contain__details {
+  width: 16.875rem;
+  height: 20.625rem;
+  background: white;
+  opacity: 0.9;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 6rem;
+}
+
+.kkal {
+  width: 62.5rem;
+  height: 6.25rem;
+  position: absolute;
+  top: 18.75rem;
+  left: 0;
+}
+
+.kkal__icon {
+  width: 100%;
+}
+
+.details__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+  color: #000;
+  font-family: "Ubuntu";
 }

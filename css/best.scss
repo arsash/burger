@@ -43,6 +43,14 @@
     font-size: rem(24px);
     margin-bottom: rem(25px);
     color: #2f3234;
+
+    h3 {
+        margin-bottom: rem(25px);
+    }
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .best__text {
@@ -52,6 +60,11 @@
     font-size: rem(14px);
     line-height: rem(24px);
     margin-bottom: 2rem;
+
+    @include phones {
+        text-align: left;
+        font-size: rem(14px);
+    }
 }
 
 .best__img-elem {

@@ -48,6 +48,10 @@
         @include tablets {
             margin: 2rem auto;
         }
+
+        @include phones {
+            font-size: rem(50px);
+        }
     }
 
     &--white {
