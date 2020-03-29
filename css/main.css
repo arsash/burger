@@ -1569,6 +1569,12 @@ input:focus, textarea:focus {
   justify-content: center;
   align-items: center;
 }
+.contain__container:hover {
+  background: #e45028;
+}
+.contain__container:hover .contain__details {
+  display: flex;
+}
 
 .contain__icon {
   width: 100%;
@@ -1610,6 +1616,7 @@ input:focus, textarea:focus {
 }
 
 .contain__details {
+  display: none;
   width: 16.875rem;
   height: 20.625rem;
   background: white;
@@ -1632,6 +1639,14 @@ input:focus, textarea:focus {
   width: 100%;
 }
 
+.details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .details__item {
   display: flex;
   justify-content: space-between;
@@ -1639,4 +1654,12 @@ input:focus, textarea:focus {
   height: 3.125rem;
   color: #000;
   font-family: "Ubuntu";
+}
+.details__item span {
+  margin-left: 25px;
+}
+
+.details__icon {
+  width: 3.125rem;
+  height: 3.125rem;
 }

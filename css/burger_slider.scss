@@ -77,6 +77,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        background: #e45028;
+
+        .contain__details {
+            display: flex;
+        }
+    }
 }
 
 .contain__icon {
@@ -119,6 +127,7 @@
 }
 
 .contain__details {
+    display: none;
     width: rem(270px);
     height: rem(330px);
     background: white;
@@ -142,6 +151,14 @@
     // height: 100%;
 }
 
+.details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .details__item {
     display: flex;
     justify-content: space-between;
@@ -149,4 +166,13 @@
     height: rem(50px);
     color: #000;
     font-family: 'Ubuntu';
+
+    span {
+        margin-left: 25px;
+    }
+}
+
+.details__icon {
+    width: rem(50px);
+    height: rem(50px);
 }
