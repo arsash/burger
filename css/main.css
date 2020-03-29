@@ -1245,6 +1245,13 @@ h1, h2, h3, h4, h5, h6, li {
   }
 }
 
+.phone__icon {
+  width: 11px;
+  height: 11px;
+  fill: #e45028;
+  margin-right: 5px;
+}
+
 .footer-right {
   width: 50%;
   display: flex;
