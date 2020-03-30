@@ -85,6 +85,11 @@
             display: flex;
         }
     }
+
+    @include tablets {
+        top: 0;
+        left: 0;
+    }
 }
 
 .contain__icon {
@@ -144,6 +149,11 @@
     position: absolute;
     top: rem(300px);
     left: 0;
+
+    @include tablets {
+        top: 0;
+        left: rem(560px);
+    }
 }
 
 .kkal__icon {

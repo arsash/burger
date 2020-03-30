@@ -1582,6 +1582,12 @@ input:focus, textarea:focus {
 .contain__container:hover .contain__details {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .contain__container {
+    top: 0;
+    left: 0;
+  }
+}
 
 .contain__icon {
   width: 100%;
@@ -1640,6 +1646,12 @@ input:focus, textarea:focus {
   position: absolute;
   top: 18.75rem;
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  .kkal {
+    top: 0;
+    left: 35rem;
+  }
 }
 
 .kkal__icon {
