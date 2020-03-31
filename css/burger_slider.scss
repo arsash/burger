@@ -28,8 +28,8 @@
     }
 }
 
-.slider_col {
-    width: 40%;
+.slider__column {
+    width: 50%;
 
     @include laptop {
         width: 80%;
@@ -38,7 +38,7 @@
 
     @include tablets {
         width: 80%;
-        text-align: center;
+        
     }
 
     @include phones {
@@ -114,20 +114,42 @@
     font-size: rem(14px);
 }
 
-.slider-cost {
+.slider__cost {
     display: flex;
     position: relative;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .order-pos {
     position: absolute;
-    top: 42px;
-    left: 250px;
+    // top: 42px;
+    // left: 250px;
+
+    // @include tablets {
+    //     top: 27px;
+    // }
+
+    // @include phones {
+    //     top: 27px;
+    // }
 }
 
 .slider__img {
+    // width: rem(535px);
+
+    @include laptop {
+        width: rem(410px);
+    }
+
+    @include tablets {
+        width: 23rem;
+    }
+
     @include phones {
-        width: rem(350px);
+        width: rem(200px);
     }
 }
 

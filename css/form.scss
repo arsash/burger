@@ -6,7 +6,7 @@
     justify-content: space-between;
 
     @include laptop {
-        width: 90%;
+        width: 95%;
     }
     
     @include tablets {
@@ -164,6 +164,15 @@ input, textarea {
     position: relative;
     display: inline-block;
     margin-right: 10px;
+
+    @include laptop {
+        flex-shrink: 0;
+    }
+
+    @include tablets {
+        flex-shrink: 0;
+    }
+
 }
 
 .checked__box {

@@ -487,6 +487,12 @@ h1, h2, h3, h4, h5, h6, li {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    z-index: 55;
+  }
+}
+
 .logo__img {
   width: 6.25rem;
   height: 4.6875rem;
@@ -500,6 +506,20 @@ h1, h2, h3, h4, h5, h6, li {
 .nav .nav__list {
   display: flex;
   list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .nav .nav__list {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .nav__item {
+    padding: 15px 0;
+  }
 }
 .nav .nav__link {
   color: #fff;
@@ -517,40 +537,67 @@ h1, h2, h3, h4, h5, h6, li {
 }
 @media screen and (max-width: 768px) {
   .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
+    width: 100%;
+    background: #2F3234;
+    z-index: 50;
+  }
+}
+
+.nav__show {
+  display: flex;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .scroll {
+    bottom: -10.9375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .scroll {
+    bottom: -5.9375rem;
   }
 }
 
 .scroll__down {
   width: 1.875rem;
   height: 0.9375rem;
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
   cursor: pointer;
 }
 
 .hamburger {
   cursor: pointer;
   display: none;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 37px;
+  right: 30px;
+  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
   }
 }
 
-.hamburger-nav {
-  width: 35px;
+.hamburger__nav {
+  width: 100%;
   height: 5px;
   background: #fff;
   border-radius: 3px;
-  position: absolute;
-  top: 48px;
-  right: 13px;
+  position: relative;
   cursor: pointer;
 }
-.hamburger-nav:before {
+.hamburger__nav:before {
   content: "";
   width: 35px;
   height: 5px;
@@ -560,7 +607,7 @@ h1, h2, h3, h4, h5, h6, li {
   top: -10px;
   right: 0;
 }
-.hamburger-nav:after {
+.hamburger__nav:after {
   content: "";
   width: 35px;
   height: 5px;
@@ -570,30 +617,19 @@ h1, h2, h3, h4, h5, h6, li {
   top: 10px;
   right: 0;
 }
-.hamburger-nav:hover {
+
+.hamburger__nav--active {
   background: transparent;
 }
-.hamburger-nav:hover:before {
+.hamburger__nav--active:before {
   top: 0;
   transform: rotate(-45deg);
   transition: 0.5s;
 }
-.hamburger-nav:hover:after {
+.hamburger__nav--active:after {
   top: 0;
   transform: rotate(45deg);
   transition: 0.5s;
-}
-@media screen and (max-width: 768px) {
-  .hamburger-nav {
-    top: 3.125rem;
-    right: 1.875rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hamburger-nav {
-    top: 3.125rem;
-    right: 1.875rem;
-  }
 }
 
 .point-nav {
@@ -1309,7 +1345,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 @media screen and (max-width: 990px) {
   .form__inputs {
-    width: 90%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1460,6 +1496,16 @@ input:focus, textarea:focus {
   display: inline-block;
   margin-right: 10px;
 }
+@media screen and (max-width: 990px) {
+  .radio__custom {
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .radio__custom {
+    flex-shrink: 0;
+  }
+}
 
 .checked__box {
   display: none;
@@ -1523,23 +1569,22 @@ input:focus, textarea:focus {
   }
 }
 
-.slider_col {
-  width: 40%;
+.slider__column {
+  width: 50%;
 }
 @media screen and (max-width: 990px) {
-  .slider_col {
+  .slider__column {
     width: 80%;
     text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .slider_col {
+  .slider__column {
     width: 80%;
-    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
-  .slider_col {
+  .slider__column {
     width: 100%;
   }
 }
@@ -1611,20 +1656,33 @@ input:focus, textarea:focus {
   font-size: 0.875rem;
 }
 
-.slider-cost {
+.slider__cost {
   display: flex;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .slider__cost {
+    justify-content: center;
+  }
 }
 
 .order-pos {
   position: absolute;
-  top: 42px;
-  left: 250px;
 }
 
+@media screen and (max-width: 990px) {
+  .slider__img {
+    width: 25.625rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__img {
+    width: 23rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .slider__img {
-    width: 21.875rem;
+    width: 12.5rem;
   }
 }
 

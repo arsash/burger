@@ -10,6 +10,12 @@
     }
 }
 
+.logo {
+    @include tablets {
+        z-index: 55;
+    }
+}
+
 .logo__img {
     width: rem(100px);
     height: rem(75px);
