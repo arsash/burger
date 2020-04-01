@@ -552,6 +552,11 @@ h1, h2, h3, h4, h5, h6, li {
     margin-top: 1.75rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .nav .nav__link {
+    font-size: 1.5rem;
+  }
+}
 .nav .nav__item:last-child .nav__link:after {
   content: "";
 }

@@ -46,6 +46,10 @@
                 margin-top: rem(28px);
             }
         }
+
+        @include tablets {
+            font-size: rem(24px);
+        }
     }
     
 
