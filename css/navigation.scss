@@ -36,6 +36,12 @@
 
             @include tablets {
                 position: absolute;
+                left: 49%;
+                margin-top: rem(28px);
+            }
+
+            @include phones {
+                position: absolute;
                 left: 48.5%;
                 margin-top: rem(28px);
             }
