@@ -138,10 +138,10 @@
 }
 
 .slider__img {
-    // width: rem(535px);
+    width: rem(535px);
 
     @include laptop {
-        width: rem(410px);
+        width: 26rem;
     }
 
     @include tablets {
@@ -149,7 +149,7 @@
     }
 
     @include phones {
-        width: rem(200px);
+        width: 23rem;
     }
 }
 
@@ -171,6 +171,11 @@
     position: absolute;
     top: rem(300px);
     left: 0;
+
+    @include laptop {
+        top: 0;
+        left: rem(560px);
+    }
 
     @include tablets {
         top: 0;

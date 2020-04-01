@@ -31,7 +31,7 @@
 .burger__img {
 
     @include laptop {
-        // width: 95%;
+        width: rem(450px);
     }
 
 }

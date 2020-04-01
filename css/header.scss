@@ -5,6 +5,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @include laptop {
+        max-width: 58.5rem;
+    }
+
     @include tablets {
         width: 95%;
     }

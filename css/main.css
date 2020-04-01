@@ -481,6 +481,11 @@ h1, h2, h3, h4, h5, h6, li {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 990px) {
+  .header {
+    max-width: 58.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     width: 95%;
@@ -531,6 +536,13 @@ h1, h2, h3, h4, h5, h6, li {
   content: "•";
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  .nav .nav__link:after {
+    position: absolute;
+    left: 50%;
+    margin-top: 1.75rem;
+  }
 }
 .nav .nav__item:last-child .nav__link:after {
   content: "";
@@ -753,6 +765,12 @@ h1, h2, h3, h4, h5, h6, li {
 @media screen and (max-width: 768px) {
   .burger__text {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .burger__img {
+    width: 28.125rem;
   }
 }
 
@@ -1670,9 +1688,12 @@ input:focus, textarea:focus {
   position: absolute;
 }
 
+.slider__img {
+  width: 33.4375rem;
+}
 @media screen and (max-width: 990px) {
   .slider__img {
-    width: 25.625rem;
+    width: 26rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1682,7 +1703,7 @@ input:focus, textarea:focus {
 }
 @media screen and (max-width: 480px) {
   .slider__img {
-    width: 12.5rem;
+    width: 23rem;
   }
 }
 
@@ -1704,6 +1725,12 @@ input:focus, textarea:focus {
   position: absolute;
   top: 18.75rem;
   left: 0;
+}
+@media screen and (max-width: 990px) {
+  .kkal {
+    top: 0;
+    left: 35rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .kkal {
