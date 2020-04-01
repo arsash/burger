@@ -519,6 +519,7 @@ h1, h2, h3, h4, h5, h6, li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: -20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -540,7 +541,7 @@ h1, h2, h3, h4, h5, h6, li {
 @media screen and (max-width: 768px) {
   .nav .nav__link:after {
     position: absolute;
-    left: 50%;
+    left: 48.5%;
     margin-top: 1.75rem;
   }
 }

@@ -13,6 +13,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-left: -20px;
         }
     }
 
@@ -35,7 +36,7 @@
 
             @include tablets {
                 position: absolute;
-                left: 50%;
+                left: 48.5%;
                 margin-top: rem(28px);
             }
         }
