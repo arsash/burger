@@ -777,6 +777,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 @media screen and (max-width: 768px) {
   .burger__text {
+    margin-top: 2.5rem;
     text-align: center;
   }
 }
@@ -1110,6 +1111,7 @@ h1, h2, h3, h4, h5, h6, li {
 .team__person-about-active {
   height: 100%;
   margin-top: 20px;
+  transition: 0.5s;
 }
 
 .about__image {

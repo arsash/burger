@@ -24,6 +24,7 @@
     margin-top: rem(75px);
 
     @include tablets {
+        margin-top: 2.5rem;
         text-align: center;
     }
 }
