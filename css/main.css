@@ -1374,6 +1374,11 @@ h1, h2, h3, h4, h5, h6, li {
   height: 100%;
 }
 
+#map {
+  width: 100%;
+  height: 100%;
+}
+
 .form__inputs {
   font-family: "Ubuntu";
   color: #fff;
