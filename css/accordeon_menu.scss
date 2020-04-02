@@ -34,12 +34,12 @@
     height: 100%;
     position: relative;
 
-    &:hover {
-        .menu__desc {
-            width: rem(540px);
-            transition: 1s;
-        }
-    }
+    // &:hover {
+    //     .menu__desc {
+    //         width: rem(540px);
+    //         transition: 1s;
+    //     }
+    // }
 }
 
 .menu-item__block {
@@ -107,9 +107,10 @@
     color: #fff;
     text-align: justify;
 
-    // &--active {
-    //     width: rem(460px);
-    // }
+    &--active {
+        width: rem(500px);
+        transition: 0.5s;
+    }
 }
 
 .menu__text {

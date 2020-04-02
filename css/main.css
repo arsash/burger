@@ -783,7 +783,12 @@ h1, h2, h3, h4, h5, h6, li {
 
 @media screen and (max-width: 990px) {
   .burger__img {
-    width: 28.125rem;
+    width: 29.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .burger__img {
+    width: 21.875rem;
   }
 }
 
@@ -1166,10 +1171,6 @@ h1, h2, h3, h4, h5, h6, li {
   height: 100%;
   position: relative;
 }
-.menu__item:hover .menu__desc {
-  width: 33.75rem;
-  transition: 1s;
-}
 
 .menu-item__block {
   display: flex;
@@ -1232,6 +1233,10 @@ h1, h2, h3, h4, h5, h6, li {
   opacity: 0.8;
   color: #fff;
   text-align: justify;
+}
+.menu__desc--active {
+  width: 31.25rem;
+  transition: 0.5s;
 }
 
 .menu__text {
