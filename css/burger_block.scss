@@ -60,6 +60,10 @@
 
     &--white {
         color: #fff;
+
+        @include tablets {
+            font-size: 3.5rem;
+        }
     }
 
     &--red {

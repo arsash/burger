@@ -9,12 +9,12 @@
     position: relative;
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
     @include laptop {
         width: 90%;
+        flex-direction: column;
     }
     
     @include tablets {
@@ -68,15 +68,13 @@
     width: rem(95px);
     height: rem(80px);
     background: #f08c33;
-    position: absolute;
-    top: rem(-60px);
-    left: 0;
     border-radius: 10px;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: flex-start;
 
     &:hover {
         background: #e45028;
@@ -84,11 +82,6 @@
         .contain__details {
             display: flex;
         }
-    }
-
-    @include tablets {
-        top: 0;
-        left: 0;
     }
 }
 
@@ -132,18 +125,10 @@
 }
 
 .slider__img {
-    width: rem(535px);
+    max-width: 100%;
 
     @include laptop {
-        width: 26rem;
-    }
-
-    @include tablets {
-        width: 23rem;
-    }
-
-    @include phones {
-        width: 23rem;
+        width: 80%;
     }
 }
 
@@ -179,7 +164,7 @@
 
 .kkal__icon {
     width: 100%;
-    // height: 100%;
+    height: 100%;
 }
 
 .details {
