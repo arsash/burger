@@ -117,6 +117,8 @@
 .slider__cost {
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
 
     @include tablets {
         justify-content: center;
@@ -124,17 +126,9 @@
 }
 
 .order-pos {
-    position: absolute;
-    // top: 42px;
-    // left: 250px;
-
-    // @include tablets {
-    //     top: 27px;
-    // }
-
-    // @include phones {
-    //     top: 27px;
-    // }
+    position: initial;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .slider__img {

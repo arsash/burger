@@ -74,6 +74,10 @@
     @include laptop {
         font-size: 4rem;
     }
+
+    @include phones {
+        font-size: 3rem;
+    }
 }
 
 .natural__text {
