@@ -22,7 +22,7 @@
         background-color: #c1401e;
     }
 
-    @include tablets {
+    @include laptop {
         position: absolute;
         top: rem(35px);
         right: rem(95px);

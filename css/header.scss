@@ -15,7 +15,7 @@
 }
 
 .logo {
-    @include tablets {
+    @include laptop {
         z-index: 55;
     }
 }

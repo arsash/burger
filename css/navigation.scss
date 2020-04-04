@@ -7,19 +7,20 @@
         display: flex;
         list-style: none;
 
-        @include tablets {
+        @include laptop {
             width: 100%;
             height: 100vh;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin-left: -20px;
+            margin-top: 2.5rem;
         }
     }
 
     .nav__item {
-        @include tablets {
-            padding: 15px 0;
+        @include laptop {
+            padding: 0;
         }
     }
 
@@ -34,20 +35,16 @@
             padding-left: 15px;
             padding-right: 15px;
 
-            @include tablets {
-                position: absolute;
-                left: 49%;
-                margin-top: rem(28px);
-            }
-
-            @include phones {
-                position: absolute;
-                left: 48.5%;
-                margin-top: rem(28px);
+            @include laptop {
+                margin: rem(10px) 0;
             }
         }
 
-        @include tablets {
+        @include laptop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             font-size: rem(24px);
         }
     }
@@ -59,7 +56,7 @@
         }
     }
 
-    @include tablets {
+    @include laptop {
         position: fixed;
         top: 0;
         left: 0;
@@ -68,6 +65,7 @@
         background: #2F3234;
         z-index: 50;
     }
+
 }
 
 .nav__show {
@@ -75,16 +73,7 @@
 }
 
 .scroll {
-    position: absolute;
-    bottom: rem(40px);
-
-    @include tablets {
-        bottom: rem(-175px);
-    }
-
-    @include phones {
-        bottom: rem(-95px);
-    }
+    
 }
 
 .scroll__down {
@@ -104,7 +93,7 @@
     right: 30px;
     z-index: 100;
 
-    @include tablets {
+    @include laptop {
         display: flex;
     }
 }
