@@ -1,7 +1,26 @@
-const accMenuBtn = document.querySelector('.menu__item-btn');
-const descBlock = document.querySelector('.menu__desc');
-console.log(descBlock);
-accMenuBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    descBlock.classList.toggle('menu__desc--active');
+const accMenu = document.querySelectorAll('.menu__item');
+const menu = document.querySelector('.menu-container');
+
+function accordeon(acc, team) {
+    // menu.addEventListener('click', function(e) {
+
+    //     for(let item of accMenu){
+    //         if(item.classList.contains('active') && item != e.target.parentNode.parentNode){
+    //             item.classList.remove('active');
+    //         }
+    //     }
+    
+    //     e.target.parentNode.parentNode.classList.toggle('active');
+    // });    
+}
+
+menu.addEventListener('click', function(e) {
+
+    for(let item of accMenu){
+        if(item.classList.contains('active') && item != e.target.parentNode.parentNode){
+            item.classList.remove('active');
+        }
+    }
+
+    e.target.parentNode.parentNode.classList.toggle('active');
 });

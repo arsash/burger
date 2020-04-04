@@ -30,16 +30,8 @@
 
 .menu__item {
     display: flex;
-    width: 100%;
     height: 100%;
     position: relative;
-
-    // &:hover {
-    //     .menu__desc {
-    //         width: rem(540px);
-    //         transition: 1s;
-    //     }
-    // }
 }
 
 .menu-item__block {
@@ -97,6 +89,8 @@
     cursor: pointer;
     font-size: rem(40px);
     color: #fff;
+    width: 100%;
+    height: 100%;
 }
 
 .menu__desc {
@@ -106,11 +100,11 @@
     opacity: 0.8;
     color: #fff;
     text-align: justify;
+}
 
-    &--active {
-        width: rem(500px);
-        transition: 0.5s;
-    }
+.menu__item.active .menu__desc {
+    width: 100%;
+    transition: 0.7s;
 }
 
 .menu__text {
