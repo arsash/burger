@@ -791,7 +791,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 @media screen and (max-width: 480px) {
   .section-title-black {
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 }
 .section-title--white {
