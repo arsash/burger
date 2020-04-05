@@ -90,12 +90,8 @@
     &-active {
         height: 100%;
         margin-top: 20px;
-        transition: 0.5s;
+        transition: 0.7s;
     }
-
-    // @include tablets {
-    //     flex-direction: column;
-    // }
 }
 
 .about__image {

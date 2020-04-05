@@ -1111,7 +1111,7 @@ h1, h2, h3, h4, h5, h6, li {
 .team__person-about-active {
   height: 100%;
   margin-top: 20px;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .about__image {
@@ -1240,7 +1240,7 @@ h1, h2, h3, h4, h5, h6, li {
 
 .menu__item.active .menu__desc {
   width: 100%;
-  transition: 0.7s;
+  transition: 0.9s;
 }
 
 .menu__text {

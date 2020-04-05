@@ -1,26 +1,17 @@
-const accMenu = document.querySelectorAll('.menu__item');
-const menu = document.querySelector('.menu-container');
+const menuList = document.querySelector('.menu-container');
+const menuItem = document.querySelectorAll('.menu__item');
 
-function accordeon(acc, team) {
-    // menu.addEventListener('click', function(e) {
+function accordeon(menuContainer, menuTarget) {
+    menuContainer.addEventListener('click', function(e) {
 
-    //     for(let item of accMenu){
-    //         if(item.classList.contains('active') && item != e.target.parentNode.parentNode){
-    //             item.classList.remove('active');
-    //         }
-    //     }
-    
-    //     e.target.parentNode.parentNode.classList.toggle('active');
-    // });    
-}
-
-menu.addEventListener('click', function(e) {
-
-    for(let item of accMenu){
-        if(item.classList.contains('active') && item != e.target.parentNode.parentNode){
-            item.classList.remove('active');
+        for(let item of menuTarget){
+            if(item.classList.contains('active') && item != e.target.parentNode.parentNode){
+                item.classList.remove('active');
+            }
         }
-    }
+    
+        e.target.parentNode.parentNode.classList.toggle('active');
+    });    
+};
 
-    e.target.parentNode.parentNode.classList.toggle('active');
-});
+accordeon(menuList, menuItem);
