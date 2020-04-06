@@ -1,9 +1,34 @@
 .video__container {
-    width: 95%;
-    position: relative;
+    width: 100%;
 }
 
-.player__block {
+.player__wrap {
     width: rem(660px);
     height: rem(405px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.video__controls {
+    width: rem(660px);
+    height: 33px;
+    background-color: #3E3E3E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.control {
+    width: 100%;
+    height: 20px;
+}
+
+.control__btn {
+    width: 20px;
+    height: 20px;
+    fill: #656565;
+    cursor: pointer;
 }
