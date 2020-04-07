@@ -490,21 +490,34 @@
         </section>
 
         <section class="section video">
-            <div class="video__container">
-                <div class="video__title">
-                    <!-- <h2 class="section-title section-title-black">как мы работаем</h2> -->
-                </div>
+            <div class="section__container">
+                
                 <div class="player">
+                    <h2 class="section-title">как мы работаем</h2>
                     <div class="player__wrap">
                         <div id="player"></div>
                         <div class="video__controls">
                             <div class="control">
-                                <svg class="control__btn">
-                                    <use xlink:href="./img/icons/sprite.svg#play"></use>
-                                </svg>
-                                <svg class="control__btn">
-                                    <use xlink:href="./img/icons/sprite.svg#volume"></use>
-                                </svg>
+                                <div class="control__btn">
+                                    <svg class="play">
+                                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                                    </svg>
+                                </div>
+                                <div class="playback">
+                                    <button type="button" class="range__btn"></button>
+                                </div>
+                                <div class="control__btn">
+                                    <svg class="volume">
+                                        <use xlink:href="./img/icons/sprite.svg#volume"></use>
+                                    </svg>
+                                </div>
+                                <div class="volume__range">
+                                    <button type="button" class="range__btn"></button>
+                                </div>
+                                <div class="duration">
+                                    <span class="duration__completed">0:00</span>
+                                    <span class="duration__estimated">0:00</span>
+                                </div>
                             </div>
                         </div>
                     </div>
