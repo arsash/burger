@@ -12,9 +12,35 @@ let eventsInit = () => {
       player.playVideo();
     } 
   })
-};
 
-// $('duration__completed').text.player.getCurrentTime();
+  $('.playback').click(e => {
+    const playBar = $(e.currentTarget);
+    const clickedPosition = e.originalEvent.layerX;
+    const newButtonPositionPercent = (clickedPosition / playBar.width()) * 100;
+    const newPlaybackPositionSec = (player.getDuration() / 100) * newButtonPositionPercent;
+
+    $('.range__btn--play').css({
+      left: `${newButtonPositionPercent}%`
+    })
+
+    player.seekTo(newPlaybackPositionSec);
+  })
+
+  $('.volume').on('click', function(){
+    let volumeIcon = $('.range__btn--volume');
+    if(player.isMuted()){
+      player.unMute();
+      volumeIcon.css({
+        left: '75%'
+      })
+    }else{
+      player.mute();
+      volumeIcon.css({
+        left: '0%'
+      })
+    }
+  })
+};
 
 const formatTime = timeSec => {
   const roundSec = Math.round(timeSec);
@@ -40,6 +66,10 @@ const onPlayerReady = () => {
 
   interval = setInterval(function(){
     const completedSec = player.getCurrentTime();
+    const completedPercent = (completedSec / durationSec) * 100;
+    $('.range__btn--play').css({
+      left: `${completedPercent}%`
+    })
     $('.duration__completed').text(formatTime(completedSec));
   }, 1000)
 };
@@ -48,7 +78,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '100%',
     width: '100%',
-    videoId: 'oqeW9YMHweo',
+    videoId: 'IxkD07EY-8o',
     events: {
       'onReady': onPlayerReady,
       // 'onStateChange': onPlayerStateChange

@@ -56,6 +56,7 @@
     height: 5px;
     background: #656565;
     position: relative;
+    cursor: pointer;
 }
 
 .volume__range {
@@ -63,10 +64,12 @@
     height: 5px;
     background: #656565;
     position: relative;
+    cursor: pointer;
 }
 
 .duration {
     color: #656565;
+    font-family: 'Ubuntu';
 }
 
 .duration span:first-child{
@@ -80,6 +83,10 @@
     border-radius: 50%;
     background: #656565;
     position: absolute;
-    top: -85%;
-    left: 0;
+    top: -100%;
+    left: 0%;
+
+    &--volume {
+        left: 75%;
+    }
 }
