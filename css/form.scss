@@ -65,6 +65,12 @@ input, textarea {
             display: none;
         }
     }
+
+    @include mini {
+        .form__label:nth-child(3) {
+            display: none;
+        }
+    }
 }
 
 .form__label-input {

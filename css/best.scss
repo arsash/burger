@@ -15,6 +15,10 @@
     @include phones {
         width: 95%;
     }
+
+    @include mini {
+        margin-top: 2rem;
+    }
 }
 
 .best__item {
@@ -69,6 +73,10 @@
     @include phones {
         text-align: left;
         font-size: rem(14px);
+    }
+
+    @include mini {
+        line-height: 1.2rem;
     }
 }
 

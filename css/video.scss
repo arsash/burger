@@ -7,6 +7,10 @@
     height: rem(405px);
     position: relative;
     margin: 0 auto;
+
+    @include tablets {
+        width: 90%;
+    }
 }
 
 .player {
@@ -29,6 +33,10 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .control {
@@ -65,11 +73,19 @@
     background: #656565;
     position: relative;
     cursor: pointer;
+
+    @include mini {
+        display: none;
+    }
 }
 
 .duration {
     color: #656565;
     font-family: 'Ubuntu';
+
+    @include mini {
+        display: none;
+    }
 }
 
 .duration span:first-child{

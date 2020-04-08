@@ -69,6 +69,10 @@
     &--red {
         color: #e45028;
         font-size: rem(71px);
+
+        @include mini {
+            font-size: 2rem;
+        }
     }
 
     &-cur {
@@ -91,5 +95,9 @@
 
     @include laptop {
         font-size: 3.5rem;
+    }
+
+    @include mini {
+        font-size: 2.5rem;
     }
 }

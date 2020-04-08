@@ -810,6 +810,11 @@ h1, h2, h3, h4, h5, h6, li {
   color: #e45028;
   font-size: 4.4375rem;
 }
+@media screen and (max-width: 355px) {
+  .section-title--red {
+    font-size: 2rem;
+  }
+}
 .section-title-cur {
   font-size: 1.8125rem;
 }
@@ -834,6 +839,11 @@ h1, h2, h3, h4, h5, h6, li {
     font-size: 3.5rem;
   }
 }
+@media screen and (max-width: 355px) {
+  .natural__text {
+    font-size: 2.5rem;
+  }
+}
 
 .best__list {
   display: flex;
@@ -853,6 +863,11 @@ h1, h2, h3, h4, h5, h6, li {
 @media screen and (max-width: 487px) {
   .best__list {
     width: 95%;
+  }
+}
+@media screen and (max-width: 355px) {
+  .best__list {
+    margin-top: 2rem;
   }
 }
 
@@ -914,6 +929,11 @@ h1, h2, h3, h4, h5, h6, li {
   .best__text {
     text-align: left;
     font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 355px) {
+  .best__text {
+    line-height: 1.2rem;
   }
 }
 
@@ -1453,6 +1473,11 @@ input:focus, textarea:focus {
     display: none;
   }
 }
+@media screen and (max-width: 355px) {
+  .form-adress .form__label:nth-child(3) {
+    display: none;
+  }
+}
 
 .form__label-input {
   width: 100%;
@@ -1595,9 +1620,12 @@ input:focus, textarea:focus {
 .slider__burger {
   position: relative;
   width: 90%;
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
+}
+.slider__burger--active {
+  display: flex;
 }
 @media screen and (max-width: 1010px) {
   .slider__burger {
@@ -1656,7 +1684,7 @@ input:focus, textarea:focus {
   border: none;
 }
 
-.contain__container {
+.slider__contain {
   width: 5.9375rem;
   height: 5rem;
   background: #f08c33;
@@ -1668,10 +1696,10 @@ input:focus, textarea:focus {
   align-items: center;
   align-self: flex-start;
 }
-.contain__container:hover {
+.slider__contain:hover {
   background: #e45028;
 }
-.contain__container:hover .contain__details {
+.slider__contain:hover .contain__details {
   display: flex;
 }
 
@@ -1736,7 +1764,7 @@ input:focus, textarea:focus {
   left: 6rem;
 }
 
-.kkal {
+.contain__kkal {
   width: 62.5rem;
   height: 6.25rem;
   position: absolute;
@@ -1744,13 +1772,13 @@ input:focus, textarea:focus {
   left: 0;
 }
 @media screen and (max-width: 1010px) {
-  .kkal {
+  .contain__kkal {
     top: 0;
     left: 35rem;
   }
 }
 @media screen and (max-width: 850px) {
-  .kkal {
+  .contain__kkal {
     top: 0;
     left: 35rem;
   }
@@ -1822,6 +1850,11 @@ input:focus, textarea:focus {
   position: relative;
   margin: 0 auto;
 }
+@media screen and (max-width: 850px) {
+  .player__wrap {
+    width: 90%;
+  }
+}
 
 .player {
   padding-top: 50px;
@@ -1842,6 +1875,11 @@ input:focus, textarea:focus {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+@media screen and (max-width: 850px) {
+  .video__controls {
+    width: 100%;
+  }
 }
 
 .control {
@@ -1879,10 +1917,20 @@ input:focus, textarea:focus {
   position: relative;
   cursor: pointer;
 }
+@media screen and (max-width: 355px) {
+  .volume__range {
+    display: none;
+  }
+}
 
 .duration {
   color: #656565;
   font-family: "Ubuntu";
+}
+@media screen and (max-width: 355px) {
+  .duration {
+    display: none;
+  }
 }
 
 .duration span:first-child {

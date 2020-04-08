@@ -8,9 +8,13 @@
 .slider__burger {
     position: relative;
     width: 90%;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
+
+    &--active {
+        display: flex;
+    }
 
     @include laptop {
         width: 90%;
@@ -64,7 +68,7 @@
     border: none;
 }
 
-.contain__container {
+.slider__contain {
     width: rem(95px);
     height: rem(80px);
     background: #f08c33;
@@ -144,7 +148,7 @@
     left: rem(96px);
 }
 
-.kkal {
+.contain__kkal {
     width: rem(1000px);
     height: rem(100px);
     position: absolute;
