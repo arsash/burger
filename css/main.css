@@ -412,6 +412,7 @@ template {
 
 .team {
   background: url("../img/team_bg.jpg") top center/cover no-repeat;
+  position: relative;
 }
 
 .menu {
@@ -465,8 +466,13 @@ body {
 .wrapper {
   width: 100%;
   min-width: 320px;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -1048,10 +1054,11 @@ h1, h2, h3, h4, h5, h6, li {
   display: flex;
   justify-content: center;
   position: absolute;
+  top: 0;
   right: 0;
   width: 50%;
   margin: 0;
-  height: 106%;
+  height: 100%;
   background: #343739;
   opacity: 0.9;
 }
@@ -1769,18 +1776,11 @@ input:focus, textarea:focus {
   height: 6.25rem;
   position: absolute;
   top: 18.75rem;
-  left: 0;
+  left: -155px;
 }
 @media screen and (max-width: 1010px) {
   .contain__kkal {
-    top: 0;
-    left: 35rem;
-  }
-}
-@media screen and (max-width: 850px) {
-  .contain__kkal {
-    top: 0;
-    left: 35rem;
+    display: none;
   }
 }
 
@@ -1817,15 +1817,15 @@ input:focus, textarea:focus {
 .modal {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: 30%;
+  width: 30%;
+  height: 30%;
+  position: fixed;
+  top: 50%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  background-color: #e45028;
+  background-color: #4B4B4B;
   color: #fff;
   box-sizing: border-box;
   padding: 30px;

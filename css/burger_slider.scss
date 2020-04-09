@@ -153,16 +153,10 @@
     height: rem(100px);
     position: absolute;
     top: rem(300px);
-    left: 0;
+    left: -155px;
 
     @include laptop {
-        top: 0;
-        left: rem(560px);
-    }
-
-    @include tablets {
-        top: 0;
-        left: rem(560px);
+        display: none;
     }
 }
 
