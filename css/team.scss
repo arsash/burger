@@ -118,3 +118,9 @@
         padding: 0;
     }
 }
+
+.team__item.active .team__person-about{
+    height: 100%;
+    margin-top: 20px;
+    transition: 0.7s;
+}

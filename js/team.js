@@ -1,14 +1,13 @@
-const menuList = document.querySelector('.team__list');
-const menuItem = document.querySelectorAll('.team__item');
+const menuTeamList = document.querySelector('.team__list');
+const menuTeamItem = document.querySelectorAll('.team__item');
 
-menuList.addEventListener('click', function(e) {
+menuTeamList.addEventListener('click', function(e) {
     if(e.target.classList.contains('team__person')){
-        for(let item of menuItem){
+        for(let item of menuTeamItem){
             if(item.classList.contains('active') && item != e.target.parentNode){
                 item.classList.remove('active');
             }
         }
+        e.target.parentNode.classList.toggle('active');
     }
-    
-    e.target.parentNode.classList.toggle('active');
 });
