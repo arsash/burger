@@ -584,6 +584,10 @@ h1, h2, h3, h4, h5, h6, li {
   display: flex;
 }
 
+.scroll {
+  margin-top: 3.125rem;
+}
+
 .scroll__down {
   width: 1.875rem;
   height: 0.9375rem;
@@ -1628,12 +1632,13 @@ input:focus, textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .slider__burger {
   position: relative;
   width: 90%;
-  display: none;
+  flex-shrink: 0;
   justify-content: space-around;
   align-items: center;
 }
@@ -1686,6 +1691,10 @@ input:focus, textarea:focus {
   background: url("../img/scroll_left.png") center center/cover no-repeat;
   background-color: transparent;
   border: none;
+  position: absolute;
+  top: 50%;
+  left: 5.625rem;
+  z-index: 100;
 }
 
 .slider__icon-right {
@@ -1695,6 +1704,10 @@ input:focus, textarea:focus {
   background: url("../img/scroll_right.png") center center/cover no-repeat;
   background-color: transparent;
   border: none;
+  position: absolute;
+  top: 50%;
+  right: 5.625rem;
+  z-index: 100;
 }
 
 .slider__contain {
@@ -1736,6 +1749,12 @@ input:focus, textarea:focus {
   font-family: "Ubuntu";
   color: #fff;
   font-size: 0.875rem;
+  width: 80%;
+}
+@media screen and (max-width: 1010px) {
+  .slider__text {
+    width: 100%;
+  }
 }
 
 .slider__cost {
