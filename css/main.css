@@ -408,6 +408,7 @@ template {
   justify-content: center;
   align-items: center;
   min-height: 40.625rem;
+  position: relative;
 }
 
 .team {
