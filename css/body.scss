@@ -20,11 +20,12 @@ body {
     min-width: 320px;
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .main{
-    width: 100%;
     height: 100%;
+    transition: transform 1s;
 }
 
 .container {

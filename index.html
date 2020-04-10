@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="main">
-            <section class="section burger" id="burger">
+            <section class="section burger active-section" id="burger">
                 <div class="section-container">
                     <div class="header">
                         <div class="logo">
@@ -27,31 +27,31 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="#best" class="nav__link">о нас</a>
+                                    <a href="" class="nav__link" data-scroll-to="1">о нас</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#slider" class="nav__link">бургеры</a>
+                                    <a href="" class="nav__link" data-scroll-to="2">бургеры</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#team" class="nav__link">команда</a>
+                                    <a href="" class="nav__link" data-scroll-to="3">команда</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#menu" class="nav__link">меню</a>
+                                    <a href="" class="nav__link" data-scroll-to="4">меню</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#review" class="nav__link">отзывы</a>
+                                    <a href="" class="nav__link" data-scroll-to="5">отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#video" class="nav__link">как мы работаем</a>
+                                    <a href="" class="nav__link" data-scroll-to="6">как мы работаем</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#contacts" class="nav__link">контакты</a>
+                                    <a href="" class="nav__link" data-scroll-to="8">контакты</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="order">
                             <div class="order_btn">
-                                <a href="#order" class="btn">заказать</a>
+                                <a href="" class="btn" data-scroll-to="7">заказать</a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <h1 class="natural__text">натуральные бургеры</h1>
                         </div>
                     </div>
-                    <a href="#best" class="scroll">
+                    <a href="" class="scroll" data-scroll-to="1">
                         <svg class="scroll__down">
                             <use xlink:href="./img/icons/sprite.svg#scroll-down"></use>
                         </svg>
@@ -202,7 +202,7 @@
                                 <h3 class="section-title section-title--red">500 <span class="section-title-cur">рублей</span></h3>
                                 <div class="order order-pos">
                                     <div class="order_btn">
-                                        <a href="#order" class="btn slider__btn">заказать</a>
+                                        <a href="#order" class="btn slider__btn" data-scroll-to="7">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +221,7 @@
                                 <h3 class="section-title section-title--red">700 <span class="section-title-cur">рублей</span></h3>
                                 <div class="order order-pos">
                                     <div class="order_btn">
-                                        <a href="#order" class="btn slider__btn">заказать</a>
+                                        <a href="#order" class="btn slider__btn" data-scroll-to="7">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                                 <h3 class="section-title section-title--red">400 <span class="section-title-cur">рублей</span></h3>
                                 <div class="order order-pos">
                                     <div class="order_btn">
-                                        <a href="#order" class="btn slider__btn">заказать</a>
+                                        <a href="#order" class="btn slider__btn" data-scroll-to="7">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -691,48 +691,47 @@
         <div class="point-nav">
             <ul class="point-nav__list">
                 <li class="point_container active">
-                    <a href="#burger" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="0"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#best" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="1"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#slider" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="2"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#team" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="3"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#menu" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="4"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#review" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="5"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#video" class="point__item"></a>
+                    <a href="" class="point__item" data-scroll-to="6"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#order" class="point__item"></a>
+                    <a href="#order" class="point__item" data-scroll-to="7"></a>
                 </li>
                 <li class="point_container">
-                    <a href="#contacts" class="point__item"></a>
+                    <a href="#contacts" class="point__item" data-scroll-to="8"></a>
                 </li>
             </ul>
         </div>
     </div>
-    <!-- <script src="js/burger_slider.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/modal.js"></script>
+    <!-- <script src=".js/modal.js"></script> -->
     <script src="js/hamburger_nav.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/team.js"></script>
+    <!-- <script src=".js/accordion.js"></script> -->
+    <!-- <script src=".js/team.js"></script> -->
+    <!-- <script src=".js/burger_slider.js"></script> -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-    <script src="js/map.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="js/player.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/form.js"></script>
+    <!-- <script src=".js/map.js"></script> -->
+    <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+    <!-- <script src=".js/player.js"></script> -->
+    <!-- <script src="./js/slider.js"></script> -->
+    <!-- <script src="./js/form.js"></script> -->
     <script src="./js/one_page_scroll.js"></script>
 </body>
 </html>
