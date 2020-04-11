@@ -377,19 +377,13 @@ template {
 }
 .section {
   width: 100%;
-  height: 100vh;
-  min-height: 40.625rem;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 850px) {
   .section {
-    min-height: 56.25rem;
-  }
-}
-@media screen and (max-width: 487px) {
-  .section {
-    min-height: 50rem;
+    min-height: initial;
   }
 }
 
@@ -407,7 +401,6 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40.625rem;
   position: relative;
 }
 

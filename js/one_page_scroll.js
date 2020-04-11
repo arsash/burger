@@ -6,7 +6,7 @@ let inScroll = false;
 const performTransition = function(seсtionEq) {
     if(inScroll === false){
         inScroll = true;
-        const position = seсtionEq * -103;
+        const position = seсtionEq * -100;
 
         sections.eq(seсtionEq).addClass('active-section').siblings().removeClass('active-section');
 
