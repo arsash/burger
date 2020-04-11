@@ -69,5 +69,10 @@ $('[data-scroll-to]').on('click', function(e){
     performTransition(target);
 });
 
+$('body').swipe( {
+    swipe: function(event, direction) {
+      alert(direction);  
+    }
+  });
 
 
