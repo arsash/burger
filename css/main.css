@@ -1659,7 +1659,7 @@ input:focus, textarea:focus {
 }
 
 .slider__column {
-  width: 50%;
+  width: 45%;
 }
 @media screen and (max-width: 1010px) {
   .slider__column {
