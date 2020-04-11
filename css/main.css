@@ -700,7 +700,7 @@ h1, h2, h3, h4, h5, h6, li {
   border: 1px solid #fff;
 }
 
-.point_container.active {
+.point_container.point_active {
   border: 1px solid #fff;
 }
 
@@ -1439,8 +1439,6 @@ h1, h2, h3, h4, h5, h6, li {
 @media screen and (max-width: 487px) {
   .form__inputs {
     width: 90%;
-    flex-direction: column;
-    margin: auto;
   }
 }
 

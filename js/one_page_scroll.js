@@ -15,6 +15,7 @@ const performTransition = function(seсtionEq) {
         });
 
         setTimeout(() => {
+            // $('.point_container').eq(sectionEq).addClass('point_active').siblings().removeClass('point_active');
             inScroll = false;
         }, 1300)
     }
@@ -68,11 +69,3 @@ $('[data-scroll-to]').on('click', function(e){
 
     performTransition(target);
 });
-
-$('body').swipe( {
-    swipe: function(event, direction) {
-      alert(direction);  
-    }
-  });
-
-
