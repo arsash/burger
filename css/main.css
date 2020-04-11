@@ -1623,14 +1623,15 @@ input:focus, textarea:focus {
 .slider__container {
   width: 95%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .slider__burger {
   position: relative;
-  width: 90%;
+  width: 100%;
   flex-shrink: 0;
   justify-content: space-around;
   align-items: center;
@@ -1640,18 +1641,18 @@ input:focus, textarea:focus {
 }
 @media screen and (max-width: 1010px) {
   .slider__burger {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 850px) {
   .slider__burger {
-    width: 90%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 487px) {
   .slider__burger {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
   }

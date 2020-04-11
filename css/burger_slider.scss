@@ -1,14 +1,15 @@
 .slider__container {
     width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .slider__burger {
     position: relative;
-    width: 90%;
+    width: 100%;
     // display: none;
     flex-shrink: 0;
     justify-content: space-around;
@@ -19,16 +20,16 @@
     }
 
     @include laptop {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
     }
     
     @include tablets {
-        width: 90%;
+        width: 100%;
     }
 
     @include phones {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
     }
