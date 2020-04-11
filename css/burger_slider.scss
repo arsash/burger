@@ -64,6 +64,10 @@
     top: 50%;
     left: rem(90px);
     z-index: 20;
+
+    @include tablet_bp {
+        left: 1rem;
+    }
 }
 
 .slider__icon-right {
@@ -77,6 +81,10 @@
     top: 50%;
     right: rem(90px);
     z-index: 20;
+
+    @include tablet_bp {
+        right: 1rem;
+    }
 }
 
 .slider__contain {

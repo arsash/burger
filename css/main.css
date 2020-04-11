@@ -1690,6 +1690,11 @@ input:focus, textarea:focus {
   left: 5.625rem;
   z-index: 20;
 }
+@media screen and (max-width: 590px) {
+  .slider__icon-left {
+    left: 1rem;
+  }
+}
 
 .slider__icon-right {
   width: 15px;
@@ -1702,6 +1707,11 @@ input:focus, textarea:focus {
   top: 50%;
   right: 5.625rem;
   z-index: 20;
+}
+@media screen and (max-width: 590px) {
+  .slider__icon-right {
+    right: 1rem;
+  }
 }
 
 .slider__contain {
