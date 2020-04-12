@@ -1857,12 +1857,13 @@ input:focus, textarea:focus {
   left: 0;
   margin: 0 auto;
   border-radius: 15px;
-  background: #fff;
+  background: #1c1c1c;
   padding: 10px 30px;
   font-family: "Ubuntu";
   font-size: 14px;
   text-align: center;
   z-index: 1000;
+  border: 3px solid #f9b43b;
 }
 @media screen and (max-width: 1010px) {
   .modal {
@@ -1881,7 +1882,7 @@ input:focus, textarea:focus {
 }
 
 .modal__text-succes {
-  color: green;
+  color: #faf9f8;
   text-transform: uppercase;
 }
 
@@ -1894,6 +1895,7 @@ input:focus, textarea:focus {
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 7px;
+  font-weight: bold;
 }
 
 .video__container {
