@@ -17,7 +17,7 @@ orderForm.addEventListener('submit', function (e) {
         xhr.open('POST', formServer);
         xhr.send(data);
         xhr.addEventListener('load', () => {
-            if(xhr.response.status){
+            if(xhr.response.status = 200){
                 $('.modal').css({
                     'display': 'flex'
                 });
