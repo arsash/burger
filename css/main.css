@@ -1863,6 +1863,16 @@ input:focus, textarea:focus {
   text-align: center;
   z-index: 1000;
 }
+@media screen and (max-width: 1010px) {
+  .modal {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .modal {
+    width: 40%;
+  }
+}
 
 .modal__text-error {
   color: #e45028;
@@ -1879,6 +1889,7 @@ input:focus, textarea:focus {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  border-radius: 7px;
 }
 
 .video__container {

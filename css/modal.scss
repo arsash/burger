@@ -17,6 +17,14 @@
     font-family: 'Ubuntu';
     text-align: center;
     z-index: 1000;
+
+    @include laptop {
+        width: 40%;
+    }
+
+    @include tablets {
+        width: 40%;
+    }
 }
 
 .modal__text-error {
@@ -34,4 +42,5 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    border-radius: 7px;
 }

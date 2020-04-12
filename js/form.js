@@ -22,10 +22,10 @@ sendBtn.addEventListener('click', function (e) {
                 $('.modal').css({
                     'display': 'flex'
                 });
-                $('body').css({
-                    'background': '#000',
-                    'opacity': 0.5
-                })
+                // $('body').css({
+                //     'background': '#000',
+                //     'opacity': 0.5
+                // })
             }
             
         })

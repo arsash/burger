@@ -8,10 +8,10 @@ $(document).ready(function(){
         modal.css({
             'display': 'none'
         })
-        $('body').css({
-            'background': '#000',
-            'opacity': 1
-        })
+        // $('body').css({
+        //     'background': '#000',
+        //     'opacity': 1
+        // })
     })
 });
 
