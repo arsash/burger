@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мр. Бургер | Аршалуйс Асланян</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -573,11 +572,11 @@
                             <div class="form__row">
                                 <label class="form__label">
                                     <span class="form__label-title">Имя</span>
-                                    <input type="text" class="form__label-input">
+                                    <input type="text" class="form__label-input" name="name" required>
                                 </label>
                                 <label class="form__label">
                                     <span class="form__label-title">Телефон</span>
-                                    <input type="text" class="form__label-input">
+                                    <input type="text" class="form__label-input" name="phone" required>
                                 </label>
                             </div>
                             <div class="form__row">
@@ -609,7 +608,7 @@
                             <div class="form__row">
                                 <label class="form__label">
                                     <span class="form__label-title">Комментарий</span>
-                                    <textarea cols="20" rows="4" class="form__label-input"></textarea>
+                                    <textarea cols="20" rows="4" class="form__label-input" name="comment"></textarea>
                                 </label>
                             </div>
                             <div class="form__row controls">
@@ -632,7 +631,7 @@
                                 </label>
                             </div>
                             <div class="form__row">
-                                <input type="submit" class="order__btn" checked value="Заказать">
+                                <input type="submit" class="order__btn" value="Заказать">
                                 <input type="reset" class="reset__btn" value="Очистить">
                             </div>
                         </div>
@@ -686,7 +685,6 @@
                     </div>
                 </footer>
             </section>
-
         </div>
         <div class="point-nav">
             <ul class="point-nav__list">
@@ -719,9 +717,14 @@
                 </li>
             </ul>
         </div>
+        <div class="modal">
+            <h2 class="modal__text-error">ошибка отправки заказа</h2>
+            <button type="button" class="modal__btn">закрыть</button>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <!-- <script src=".js/modal.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.0.9/dist/jBox.all.min.js"></script>
     <script src="js/hamburger_nav.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/team.js"></script>

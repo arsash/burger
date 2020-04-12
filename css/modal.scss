@@ -1,25 +1,37 @@
 .modal {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+    width: 20%;
     height: 30%;
-    position: fixed;
-    top: 50%;
-    left: 0;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 30%;
     right: 0;
     bottom: 0;
+    left: 0;
     margin: 0 auto;
-    background-color: #4B4B4B;
+    border-radius: 15px;
+    background: #fff;
+    padding: 10px 30px;
+    font-family: 'Ubuntu';
+    text-align: center;
+    z-index: 1000;
+}
+
+.modal__text-error {
+    color: #e45028;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+}
+
+.modal__btn {
+    width: 100px;
+    height: 41px;
+    background: #e45028;
     color: #fff;
-    box-sizing: border-box;
-    padding: 30px;
-    align-items: center;
-  }
-  
-  .modal__name {
-    margin-bottom: 15px;
-  }
-  
-  .modal__text {
-    margin-bottom: 15px;
-  }
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}

@@ -11,6 +11,7 @@ function accordeon(menuContainer, menuTarget) {
         }
     
         e.target.parentNode.parentNode.classList.toggle('active');
+        
     });    
 };
 
