@@ -15,6 +15,7 @@
     background: #fff;
     padding: 10px 30px;
     font-family: 'Ubuntu';
+    font-size: 14px;
     text-align: center;
     z-index: 1000;
 
@@ -30,8 +31,11 @@
 .modal__text-error {
     color: #e45028;
     text-transform: uppercase;
-    font-size: 20px;
-    font-family: 'Ubuntu';
+}
+
+.modal__text-succes {
+    color: green;
+    text-transform: uppercase;
 }
 
 .modal__btn {

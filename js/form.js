@@ -17,15 +17,15 @@ sendBtn.addEventListener('click', function (e) {
         xhr.send(JSON.stringify(data));
         xhr.addEventListener('load', () => {
             if(xhr.response.status){
-                alert('Данные отправлены!');
+                $('.modal').css({
+                    'display': 'flex'
+                });
+                $('.modal__text-succes').text('заказ успешно отправлен');
             }else{
                 $('.modal').css({
                     'display': 'flex'
                 });
-                // $('body').css({
-                //     'background': '#000',
-                //     'opacity': 0.5
-                // })
+                $('.modal__text-error').text('ошибка отправки заказа');
             }
             
         })
