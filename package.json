@@ -1,0 +1,19 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Project for course WEB development",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsash/burger.git"
+  },
+  "author": "Arshaluys Aslanyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arsash/burger/issues"
+  },
+  "homepage": "https://github.com/arsash/burger#readme"
+}
