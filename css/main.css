@@ -999,9 +999,9 @@ h1, h2, h3, h4, h5, h6, li {
   margin-top: 1.875rem;
   letter-spacing: 3px;
 }
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 850px) {
   .review__block .review__user {
-    margin-top: 0.625rem;
+    margin-top: 5px;
   }
 }
 .review__block .review__text {
@@ -1015,13 +1015,13 @@ h1, h2, h3, h4, h5, h6, li {
 }
 @media screen and (max-width: 850px) {
   .review__block .review__text {
+    margin-top: 5px;
     max-height: calc(1.2rem * 3);
   }
 }
 @media screen and (max-width: 487px) {
   .review__block .review__text {
     max-height: calc(1.2rem * 2);
-    margin-top: 0.9375rem;
   }
 }
 .review__block .review__detail {

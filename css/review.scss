@@ -52,8 +52,8 @@
         margin-top: rem(30px);
         letter-spacing: 3px;
 
-        @include phones {
-            margin-top: rem(10px);
+        @include tablets {
+            margin-top: 5px;
         }
     }
 
@@ -67,12 +67,12 @@
         max-height: calc(1.2rem * 6);
 
         @include tablets {
+            margin-top: 5px;
             max-height: calc(1.2rem * 3);
         }
 
         @include phones {
             max-height: calc(1.2rem * 2);
-            margin-top: rem(15px);
         }
     }
 

@@ -53,6 +53,7 @@
 
 .modal__review {
     @extend .modal;
+    
     @include tablets {
         width: 70%;
         height: 30%;
