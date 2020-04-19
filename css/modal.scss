@@ -50,3 +50,7 @@
     border-radius: 7px;
     font-weight: bold;
 }
+
+.modal__review {
+    @extend .modal;
+}

@@ -50,6 +50,7 @@
         color: #fff;
         font-size: 14px;
         margin-top: rem(30px);
+        letter-spacing: 3px;
 
         @include phones {
             margin-top: rem(10px);

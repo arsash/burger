@@ -997,6 +997,7 @@ h1, h2, h3, h4, h5, h6, li {
   color: #fff;
   font-size: 14px;
   margin-top: 1.875rem;
+  letter-spacing: 3px;
 }
 @media screen and (max-width: 487px) {
   .review__block .review__user {
@@ -1843,7 +1844,7 @@ input:focus, textarea:focus {
   height: 3.125rem;
 }
 
-.modal {
+.modal, .modal__review {
   width: 20%;
   height: 30%;
   position: absolute;
@@ -1866,12 +1867,12 @@ input:focus, textarea:focus {
   border: 3px solid #f9b43b;
 }
 @media screen and (max-width: 1010px) {
-  .modal {
+  .modal, .modal__review {
     width: 40%;
   }
 }
 @media screen and (max-width: 850px) {
-  .modal {
+  .modal, .modal__review {
     width: 40%;
   }
 }
