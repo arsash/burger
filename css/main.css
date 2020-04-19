@@ -1081,6 +1081,11 @@ h1, h2, h3, h4, h5, h6, li {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 850px) {
+  .team__content {
+    height: 75%;
+  }
+}
 
 .team__list {
   padding: 0;
