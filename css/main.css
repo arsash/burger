@@ -1899,6 +1899,13 @@ input:focus, textarea:focus {
   font-weight: bold;
 }
 
+@media screen and (max-width: 850px) {
+  .modal__review {
+    width: 70%;
+    height: 30%;
+  }
+}
+
 .video__container {
   width: 100%;
 }
